@@ -41,15 +41,19 @@ public class FirstFragment extends Fragment {
 
     public void onViewCreated(@NonNull View view, Bundle savedInstanceState) {
         super.onViewCreated(view, savedInstanceState);
-        if (android.os.Build.VERSION.SDK_INT > 9) {
-            StrictMode.ThreadPolicy policy = new StrictMode.ThreadPolicy.Builder().permitAll().build();
-            StrictMode.setThreadPolicy(policy);
-        }
+        StrictMode.ThreadPolicy policy = new StrictMode.ThreadPolicy.Builder().permitAll().build();
+        StrictMode.setThreadPolicy(policy);
         binding.actBtn.setOnClickListener(v -> {
-            binding.actBtn.setText("刻晴");
+            binding.actBtn.setText("跳转activity");
             //跳转activity 在fragment里面
             startActivity(new Intent(getActivity(), EmptyActivity.class));
 
+        });
+        binding.button4.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                binding.button4.setTextColor(getResources().getColor(R.color.black));
+            }
         });
         binding.button2.setOnClickListener(new View.OnClickListener() {
             @Override
