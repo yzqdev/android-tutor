@@ -18,6 +18,7 @@ import androidx.navigation.fragment.NavHostFragment;
 import com.yzq.tutor.databinding.FragmentFirstBinding;
 
 import java.io.IOException;
+import java.util.Objects;
 
 import okhttp3.OkHttpClient;
 import okhttp3.Request;
@@ -53,7 +54,7 @@ public class FirstFragment extends Fragment {
         binding.button2.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                String url = "https://www.baidu.com";
+                String url = "https://jsonplaceholder.typicode.com/todos";
                 OkHttpClient client = new OkHttpClient();
 
 
@@ -62,7 +63,7 @@ public class FirstFragment extends Fragment {
                         .build();
 
                 try (Response response = client.newCall(request).execute()) {
-                    String data = response.body().string();
+                    String data = Objects.requireNonNull(response.body()).string();
                     Log.d("info", data);
                     binding.textviewFirst.setText(data);
 
