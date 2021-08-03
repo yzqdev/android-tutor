@@ -28,6 +28,19 @@
         app:layout_constraintTop_toBottomOf="@id/textview_first"
         app:layout_constraintVertical_bias="0.261" />
 
+    <EditText
+        android:id="@+id/edit_text"
+        android:layout_width="200dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="104dp"
+        android:layout_marginBottom="48dp"
+        android:autofillHints="todo"
+        android:inputType="text"
+        android:labelFor="@id/act_btn"
+        android:text="输入框"
+        app:layout_constraintBottom_toTopOf="@+id/act_btn"
+        app:layout_constraintStart_toStartOf="parent" />
+
     <Button
         android:id="@+id/button_first"
         android:layout_width="wrap_content"
