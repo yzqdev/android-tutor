@@ -1,5 +1,6 @@
 package com.yzq.tutor;
 
+import android.content.Context;
 import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -9,8 +10,11 @@ import android.widget.TextView;
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
+import java.util.ArrayList;
+
 public class SecondAdapter extends RecyclerView.Adapter<SecondAdapter.ViewHolder> {
-    private String[] dataSet;
+    private ArrayList dataSet;
+    private Context context;
 
     @NonNull
     @Override
@@ -22,8 +26,9 @@ public class SecondAdapter extends RecyclerView.Adapter<SecondAdapter.ViewHolder
         return new ViewHolder(v);
     }
 
-    public SecondAdapter(String[] myDataSet) {
-        dataSet = myDataSet;
+    public SecondAdapter(Context c, ArrayList myDataSet) {
+        this.context = c;
+        this.dataSet = myDataSet;
     }
 
     @Override
@@ -32,16 +37,16 @@ public class SecondAdapter extends RecyclerView.Adapter<SecondAdapter.ViewHolder
 
         // Get element from your dataset at this position and replace the contents of the view
         // with that element
-        viewHolder.getTextView().setText(dataSet[position]);
+        viewHolder.textView.setText( "aaabbb");
     }
 
     @Override
     public int getItemCount() {
-        return 0;
+        return dataSet.size();
     }
 
     public static class ViewHolder extends RecyclerView.ViewHolder {
-        private final TextView textView;
+        private  TextView textView;
 
         public ViewHolder(View v) {
             super(v);
@@ -55,8 +60,6 @@ public class SecondAdapter extends RecyclerView.Adapter<SecondAdapter.ViewHolder
             textView = (TextView) v.findViewById(R.id.textView);
         }
 
-        public TextView getTextView() {
-            return textView;
-        }
+
     }
 }
