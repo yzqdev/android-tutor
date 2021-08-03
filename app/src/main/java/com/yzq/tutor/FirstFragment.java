@@ -1,5 +1,7 @@
 package com.yzq.tutor;
 
+import android.app.Activity;
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -30,14 +32,12 @@ public class FirstFragment extends Fragment {
         super.onViewCreated(view, savedInstanceState);
         binding.actBtn.setOnClickListener(v -> {
             binding.actBtn.setText("刻晴");
+            //跳转activity 在fragment里面
+            startActivity(new Intent(getActivity(), EmptyActivity.class));
+
         });
-        binding.buttonFirst.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                NavHostFragment.findNavController(FirstFragment.this)
-                        .navigate(R.id.action_FirstFragment_to_SecondFragment);
-            }
-        });
+        binding.buttonFirst.setOnClickListener(view1 -> NavHostFragment.findNavController(FirstFragment.this)
+                .navigate(R.id.action_FirstFragment_to_SecondFragment));
     }
 
     @Override
