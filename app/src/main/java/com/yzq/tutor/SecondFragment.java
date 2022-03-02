@@ -18,7 +18,8 @@ import java.util.List;
 public class SecondFragment extends Fragment {
 
     private FragmentSecondBinding binding;
-private  SecondAdapter secondAdapter;
+    private SecondAdapter secondAdapter;
+
     class TestData {
         String text = "aaa";
         String btn = "bbb";
@@ -54,7 +55,7 @@ private  SecondAdapter secondAdapter;
         super.onViewCreated(view, savedInstanceState);
 
 
-       secondAdapter=new SecondAdapter(getActivity(), initData());
+        secondAdapter = new SecondAdapter(getActivity(), initData());
         binding.recycleView.setAdapter(secondAdapter);
         binding.recycleView.setLayoutManager(new LinearLayoutManager(getActivity(), LinearLayoutManager.VERTICAL, false));
 

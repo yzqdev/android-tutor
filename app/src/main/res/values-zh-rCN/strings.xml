@@ -9,4 +9,6 @@
     <string name="hello_first_fragment">hello 我人都傻了</string>
     <string name="hello_second_fragment">你好econd fragment. Arg: %1$s</string>
     <string name="info_text">请自行更改</string>
+    <string name="emptyConfirm">确定</string>
+    <string name="edit_message">edit_message</string>
 </resources>

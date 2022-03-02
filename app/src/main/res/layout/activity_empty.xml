@@ -28,31 +28,39 @@
         <View
             android:layout_width="0dp"
             android:layout_height="match_parent"
-            android:background="#00ff00"
-            android:layout_weight="1"/>
+            android:layout_weight="1"
+            android:background="#00ff00" />
 
         <View
             android:layout_width="0dp"
             android:layout_height="match_parent"
-            android:background="#0000ff"
-            android:layout_weight="1"/>
+            android:layout_weight="1"
+            android:background="#0000ff" />
 
     </androidx.appcompat.widget.LinearLayoutCompat>
-    <androidx.appcompat.widget.AppCompatEditText
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:hint="用户名"
-        android:padding="10dp"
-        android:background="@drawable/username"
-        android:textColor="#ff0000"
-        android:drawablePadding="5dp"
-        android:drawableStart="@drawable/ic_user"
-        android:inputType="text" />
-    <androidx.appcompat.widget.AppCompatEditText
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:hint="密码"
-        android:padding="10dp"
 
-        android:inputType="textPassword"/>
+
+    <EditText
+        android:id="@+id/editText"
+        android:layout_width="240dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="16dp"
+        android:ems="10"
+        android:hint="@string/edit_message"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toStartOf="@+id/button"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:autofillHints="1" />
+
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/confirm_button"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:onClick="sendMessage"
+        android:text="@string/emptyConfirm" />
 </androidx.appcompat.widget.LinearLayoutCompat>
