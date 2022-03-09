@@ -1,15 +1,12 @@
 package com.yzq.tutor;
 
-import android.app.Activity;
 import android.content.Intent;
 import android.os.Bundle;
 import android.os.StrictMode;
 import android.util.Log;
-import android.view.KeyEvent;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.TextView;
 
 import androidx.annotation.NonNull;
 import androidx.fragment.app.Fragment;
@@ -30,7 +27,7 @@ public class FirstFragment extends Fragment {
 
     @Override
     public View onCreateView(
-            LayoutInflater inflater, ViewGroup container,
+            @NonNull LayoutInflater inflater, ViewGroup container,
             Bundle savedInstanceState
     ) {
 
@@ -49,42 +46,31 @@ public class FirstFragment extends Fragment {
             startActivity(new Intent(getActivity(), EmptyActivity.class));
 
         });
-        binding.button4.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                binding.button4.setTextColor(getResources().getColor(R.color.black));
-            }
-        });
-        binding.button2.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                String url = "https://jsonplaceholder.typicode.com/todos";
-                OkHttpClient client = new OkHttpClient();
+        binding.button4.setOnClickListener(v -> binding.button4.setTextColor(getResources().getColor(R.color.black)));
+        binding.button2.setOnClickListener(v -> {
+            String url = "https://jsonplaceholder.typicode.com/todos";
+            OkHttpClient client = new OkHttpClient();
 
 
-                Request request = new Request.Builder()
-                        .url(url)
-                        .build();
+            Request request = new Request.Builder()
+                    .url(url)
+                    .build();
 
-                try (Response response = client.newCall(request).execute()) {
-                    String data = Objects.requireNonNull(response.body()).string();
-                    Log.d("info", data);
-                    binding.textviewFirst.setText(data);
+            try (Response response = client.newCall(request).execute()) {
+                String data = Objects.requireNonNull(response.body()).string();
+                Log.d("info", data);
+                binding.textviewFirst.setText(data);
 
-                } catch (IOException e) {
-                    e.printStackTrace();
-                }
+            } catch (IOException e) {
+                e.printStackTrace();
             }
         });
         binding.buttonFirst.setOnClickListener(view1 -> NavHostFragment.findNavController(FirstFragment.this)
                 .navigate(R.id.action_FirstFragment_to_SecondFragment));
-        binding.editText.setOnKeyListener(new View.OnKeyListener() {
-            @Override
-            public boolean onKey(View v, int keyCode, KeyEvent event) {
-                Log.d("tags", String.valueOf(binding.editText.getText()));
-                binding.actBtn.setText("已经出发了额");
-                return false;
-            }
+        binding.editText.setOnKeyListener((v, keyCode, event) -> {
+            Log.d("tags", String.valueOf(binding.editText.getText()));
+            binding.actBtn.setText("已经出发了额");
+            return false;
         });
     }
 
