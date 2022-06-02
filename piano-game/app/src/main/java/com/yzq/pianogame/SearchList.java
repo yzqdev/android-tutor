@@ -1,22 +1,17 @@
 package com.yzq.pianogame;
 
-import android.app.Activity;
+import android.content.Intent;
 import android.os.Bundle;
+import android.text.TextUtils;
 import android.view.View;
 import android.view.View.OnClickListener;
-import android.widget.Button;
-import android.text.TextUtils;
 import android.widget.ArrayAdapter;
 import android.widget.Button;
 import android.widget.ListView;
-import android.widget.SearchView;
 import android.widget.Toast;
-import android.app.Activity;
-import android.content.Intent;
 
-import com.yzq.pianogame.Carryingyou_piano;
-import com.yzq.pianogame.Crazycarryingyou_piano;
-import com.yzq.pianogame.R;
+import androidx.appcompat.app.AppCompatActivity;
+import androidx.appcompat.widget.SearchView;
 
 /**
  * Description:
@@ -29,7 +24,7 @@ import com.yzq.pianogame.R;
  * @author Yeeku.H.Lee kongyeeku@163.com
  * @version 1.0
  */
-public class Searchlist extends Activity implements
+public class SearchList extends AppCompatActivity implements
         SearchView.OnQueryTextListener {
     int n;
     private SearchView sv;
@@ -51,7 +46,7 @@ public class Searchlist extends Activity implements
         // 为该SearchView组件设置事件监听器
         sv.setOnQueryTextListener(this);
         // 获取应用程序中的button1按钮
-        Button button1 = (Button) findViewById(R.id.button1);
+        Button button1 =  findViewById(R.id.button1);
         // 为button1按钮绑定事件监听器
         button1.setOnClickListener(new OnClickListener() {
 
@@ -63,16 +58,13 @@ public class Searchlist extends Activity implements
 
         Button button2 = (Button) findViewById(R.id.button2);
         // 为button2按钮绑定事件监听器
-        button2.setOnClickListener(new OnClickListener() {
-
-            public void onClick(View source) {
-                n = 2;
-                onQueryTextChange("normal");
-            }
+        button2.setOnClickListener(source -> {
+            n = 2;
+            onQueryTextChange("normal");
         });
 
 
-        Button button3 = (Button) findViewById(R.id.button3);
+        Button button3 =  findViewById(R.id.button3);
         // 为burron3按钮绑定事件监听器
         button3.setOnClickListener(new OnClickListener() {
 
@@ -82,33 +74,30 @@ public class Searchlist extends Activity implements
             }
         });
 
-        Button button4 = (Button) findViewById(R.id.button4);
+        Button button4 = findViewById(R.id.button4);
         // 为button4按钮绑定事件监听器
-        button4.setOnClickListener(new OnClickListener() {
-
-            public void onClick(View source) {
-                if (n == 1) {// 创建需要启动的Activity对应的Intent
-                    Intent intent = new Intent(Searchlist.this,
-                            Littlestar_piano.class);
-                    // 启动intent对应的Activity
-                    startActivity(intent);
-                }
-
-                if (n == 2) {// 创建需要启动的Activity对应的Intent
-                    Intent intent = new Intent(Searchlist.this,
-                            Carryingyou_piano.class);
-                    // 启动intent对应的Activity
-                    startActivity(intent);
-                }
-
-                if (n == 3) {// 创建需要启动的Activity对应的Intent
-                    Intent intent = new Intent(Searchlist.this,
-                            Crazycarryingyou_piano.class);
-                    // 启动intent对应的Activity
-                    startActivity(intent);
-                }
-
+        button4.setOnClickListener(source -> {
+            if (n == 1) {// 创建需要启动的Activity对应的Intent
+                Intent intent = new Intent(SearchList.this,
+                        Littlestar_piano.class);
+                // 启动intent对应的Activity
+                startActivity(intent);
             }
+
+            if (n == 2) {// 创建需要启动的Activity对应的Intent
+                Intent intent = new Intent(SearchList.this,
+                        Carryingyou_piano.class);
+                // 启动intent对应的Activity
+                startActivity(intent);
+            }
+
+            if (n == 3) {// 创建需要启动的Activity对应的Intent
+                Intent intent = new Intent(SearchList.this,
+                        Crazycarryingyou_piano.class);
+                // 启动intent对应的Activity
+                startActivity(intent);
+            }
+
         });
 
         Button button5 = (Button) findViewById(R.id.button5);

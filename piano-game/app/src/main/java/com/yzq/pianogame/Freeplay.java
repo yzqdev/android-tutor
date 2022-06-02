@@ -1,8 +1,5 @@
 package com.yzq.pianogame;
 
-import java.util.HashMap;
-
-import android.app.Activity;
 import android.media.AudioManager;
 import android.media.SoundPool;
 import android.os.Bundle;
@@ -11,12 +8,13 @@ import android.view.View;
 import android.view.View.OnClickListener;
 import android.widget.Button;
 import android.widget.ImageButton;
-import android.widget.LinearLayout;
 
-import com.yzq.pianogame.R;
+import androidx.appcompat.app.AppCompatActivity;
+
+import java.util.HashMap;
 
 
-public class Freeplay extends Activity {
+public class Freeplay extends AppCompatActivity {
 
     private ImageButton imageButton_white1;
     private ImageButton imageButton_white2;

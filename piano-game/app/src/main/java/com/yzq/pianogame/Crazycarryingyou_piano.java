@@ -1,6 +1,5 @@
 package com.yzq.pianogame;
 
-import android.app.Activity;
 import android.media.AudioManager;
 import android.media.MediaPlayer;
 import android.media.SoundPool;
@@ -12,10 +11,12 @@ import android.widget.Button;
 import android.widget.ImageButton;
 import android.widget.LinearLayout;
 
+import androidx.appcompat.app.AppCompatActivity;
+
 import java.util.HashMap;
 
 
-public class Crazycarryingyou_piano extends Activity {
+public class Crazycarryingyou_piano extends AppCompatActivity {
 
     MediaPlayer mediaPlayer3 = null;
 
@@ -120,33 +121,29 @@ public class Crazycarryingyou_piano extends Activity {
         imageButton_black24 = (ImageButton) findViewById(R.id.black24);
         imageButton_black25 = (ImageButton) findViewById(R.id.black25);
 
-        imageButton_white1.setOnTouchListener(new View.OnTouchListener() {
-            public boolean onTouch(View view, MotionEvent motionEvent) {
+        imageButton_white1.setOnTouchListener((view, motionEvent) -> {
 
-                if (motionEvent.getAction() == MotionEvent.ACTION_DOWN) {
-                    soundPool.play(soundMap.get(1), 1, 1, 0, 0, 1);
-                    imageButton_white1.setImageResource(R.drawable.whiteback1);
-                }
-                if (motionEvent.getAction() == MotionEvent.ACTION_UP) {
-                    imageButton_white1.setImageResource(R.drawable.white1);
-                }
-                return false;
+            if (motionEvent.getAction() == MotionEvent.ACTION_DOWN) {
+                soundPool.play(soundMap.get(1), 1, 1, 0, 0, 1);
+                imageButton_white1.setImageResource(R.drawable.whiteback1);
             }
+            if (motionEvent.getAction() == MotionEvent.ACTION_UP) {
+                imageButton_white1.setImageResource(R.drawable.white1);
+            }
+            return false;
         });
 
 
-        imageButton_white2.setOnTouchListener(new View.OnTouchListener() {
-            public boolean onTouch(View view, MotionEvent motionEvent) {
-                if (motionEvent.getAction() == MotionEvent.ACTION_DOWN) {
+        imageButton_white2.setOnTouchListener((view, motionEvent) -> {
+            if (motionEvent.getAction() == MotionEvent.ACTION_DOWN) {
 
-                    soundPool.play(soundMap.get(2), 1, 1, 0, 0, 1);
-                    imageButton_white2.setImageResource(R.drawable.whiteback2);
-                }
-                if (motionEvent.getAction() == MotionEvent.ACTION_UP) {
-                    imageButton_white2.setImageResource(R.drawable.white2);
-                }
-                return false;
+                soundPool.play(soundMap.get(2), 1, 1, 0, 0, 1);
+                imageButton_white2.setImageResource(R.drawable.whiteback2);
             }
+            if (motionEvent.getAction() == MotionEvent.ACTION_UP) {
+                imageButton_white2.setImageResource(R.drawable.white2);
+            }
+            return false;
         });
 //
         imageButton_white3.setOnTouchListener(new View.OnTouchListener() {

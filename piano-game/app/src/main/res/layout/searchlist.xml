@@ -14,8 +14,8 @@
 
 	<Button
 	    android:id="@+id/button1"
-	    android:layout_width="100px"
-	    android:layout_height="50px"
+	    android:layout_width="100dp"
+	    android:layout_height="50dp"
 	    android:background="@drawable/button_selector11"
         android:shadowColor="#aa5"
 	    android:shadowRadius="1"
@@ -26,8 +26,8 @@
 
 	<Button
 	    android:id="@+id/button2"
-	    android:layout_width="100px"
-	    android:layout_height="50px"
+	    android:layout_width="100dp"
+	    android:layout_height="50dp"
 	    android:background="@drawable/button_selector11"
         android:shadowColor="#aa5"
 	    android:shadowRadius="1"
@@ -36,8 +36,8 @@
 	    android:text="Normal" />
 	<Button
 	    android:id="@+id/button3"
-	    android:layout_width="100px"
-	    android:layout_height="50px"
+	    android:layout_width="100dp"
+	    android:layout_height="50dp"
 	    android:background="@drawable/button_selector11"
         android:shadowColor="#aa5"
 	    android:shadowRadius="1"
@@ -49,8 +49,8 @@
 	<Button
 	    android:id="@+id/button5"
 	    style="?android:attr/buttonStyleSmall"
-	    android:layout_width="100px"
-	    android:layout_height="50px"
+	    android:layout_width="100dp"
+	    android:layout_height="50dp"
 	    android:background="@drawable/button_selector1"
         android:shadowColor="#aa5"
 	    android:shadowRadius="1"
@@ -60,16 +60,16 @@
 
 	<ListView
 	    android:id="@+id/lv"
-	    android:layout_width="350px"
+	    android:layout_width="350dp"
 	    android:layout_height="200dp"
 	    android:layout_marginLeft="100dp"
 	    android:layout_marginTop="-200dp" />
 
 	<Button
 	    android:id="@+id/button4"
-	    android:layout_width="80px"
-	    android:layout_height="60px"
-	    android:layout_marginLeft="450px"
+	    android:layout_width="80dp"
+	    android:layout_height="60dp"
+	    android:layout_marginLeft="450dp"
 	    android:layout_marginTop="-200dp"
 	    android:background="@drawable/button_selector11"
 	    android:shadowColor="#aa5"

@@ -1,6 +1,5 @@
 package com.yzq.pianogame;
 
-import android.app.Activity;
 import android.media.AudioManager;
 import android.media.SoundPool;
 import android.os.Bundle;
@@ -11,10 +10,12 @@ import android.widget.Button;
 import android.widget.ImageButton;
 import android.widget.LinearLayout;
 
+import androidx.appcompat.app.AppCompatActivity;
+
 import java.util.HashMap;
 
 
-public class Littlestar_piano extends Activity {
+public class Littlestar_piano extends AppCompatActivity {
 
 
     private ImageButton imageButton_white1;

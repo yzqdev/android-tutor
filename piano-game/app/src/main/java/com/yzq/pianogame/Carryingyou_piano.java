@@ -1,6 +1,5 @@
 package com.yzq.pianogame;
 
-import android.app.Activity;
 import android.media.AudioManager;
 import android.media.MediaPlayer;
 import android.media.SoundPool;
@@ -12,10 +11,12 @@ import android.widget.Button;
 import android.widget.ImageButton;
 import android.widget.LinearLayout;
 
+import androidx.appcompat.app.AppCompatActivity;
+
 import java.util.HashMap;
 
 
-public class Carryingyou_piano extends Activity {
+public class Carryingyou_piano extends AppCompatActivity {
 
     MediaPlayer mediaPlayer3 = null;
 

@@ -1,14 +1,15 @@
 package com.yzq.pianogame;
 
-import android.app.Activity;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.view.View.OnClickListener;
 import android.widget.Button;
 
+import androidx.appcompat.app.AppCompatActivity;
 
-public class Main extends Activity {
+
+public class Main extends AppCompatActivity {
 
 
     @Override
@@ -18,17 +19,14 @@ public class Main extends Activity {
 
 
         // 获取应用程序中的bn1按钮
-        Button bn3 = (Button) findViewById(R.id.bn3);
+        Button bn3 = findViewById(R.id.bn3);
         // 为bn3按钮绑定事件监听器
-        bn3.setOnClickListener(new OnClickListener() {
-
-            public void onClick(View source) {
-                // 创建需要启动的Activity对应的Intent
-                Intent intent = new Intent(Main.this,
-                        Searchlist.class);
-                // 启动intent对应的Activity
-                startActivity(intent);
-            }
+        bn3.setOnClickListener(source -> {
+            // 创建需要启动的Activity对应的Intent
+            Intent intent = new Intent(Main.this,
+                    SearchList.class);
+            // 启动intent对应的Activity
+            startActivity(intent);
         });
 
         // 获取应用程序中的bn4按钮
