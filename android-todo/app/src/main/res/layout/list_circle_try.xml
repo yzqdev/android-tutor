@@ -20,7 +20,7 @@
 
     <RelativeLayout
         android:layout_width="0dp"
-        android:layout_height="?android:attr/listPreferredItemHeight"
+        android:layout_height="?attr/listPreferredItemHeight"
         android:layout_marginStart="16dp"
         android:layout_marginLeft="16dp"
         android:layout_weight="5"

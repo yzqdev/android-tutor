@@ -3,20 +3,26 @@ package com.yzq.todo.Settings;
 import android.content.Context;
 import android.content.SharedPreferences;
 import android.os.Bundle;
-import android.preference.CheckBoxPreference;
-import android.preference.PreferenceFragment;
+
+
+import androidx.preference.CheckBoxPreference;
+import androidx.preference.PreferenceFragmentCompat;
 
 import com.yzq.todo.Main.MainFragment;
 import com.yzq.todo.R;
 import com.yzq.todo.Utility.PreferenceKeys;
 
-public class SettingsFragment extends PreferenceFragment implements SharedPreferences.OnSharedPreferenceChangeListener {
+/**
+ *
+ */
+public class SettingsFragment extends PreferenceFragmentCompat implements SharedPreferences.OnSharedPreferenceChangeListener {
+
+
 
 
     @Override
-    public void onCreate(Bundle savedInstanceState) {
-        super.onCreate(savedInstanceState);
-        addPreferencesFromResource(R.xml.preferences_layout);
+    public void onCreatePreferences(Bundle savedInstanceState, String rootKey) {
+        setPreferencesFromResource(R.xml.preferences_layout,rootKey);
     }
 
     @Override
@@ -28,7 +34,7 @@ public class SettingsFragment extends PreferenceFragment implements SharedPrefer
             //We tell our MainLayout to recreate itself because mode has changed
             themeEditor.putBoolean(MainFragment.RECREATE_ACTIVITY, true);
 
-            CheckBoxPreference checkBoxPreference = (CheckBoxPreference) findPreference(preferenceKeys.night_mode_pref_key);
+            CheckBoxPreference checkBoxPreference =   findPreference(preferenceKeys.night_mode_pref_key);
             if (checkBoxPreference.isChecked()) {
                 //Comment out this line if not using Google Analytics
                 themeEditor.putString(MainFragment.THEME_SAVED, MainFragment.DARKTHEME);

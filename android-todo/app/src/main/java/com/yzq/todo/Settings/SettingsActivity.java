@@ -1,6 +1,5 @@
 package com.yzq.todo.Settings;
 
-import android.app.FragmentManager;
 import android.graphics.Color;
 import android.graphics.PorterDuff;
 import android.graphics.drawable.Drawable;
@@ -10,6 +9,7 @@ import android.view.MenuItem;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.Toolbar;
 import androidx.core.app.NavUtils;
+import androidx.fragment.app.FragmentManager;
 
 import com.yzq.todo.Main.MainFragment;
 import com.yzq.todo.R;
@@ -48,7 +48,7 @@ public class SettingsActivity extends AppCompatActivity {
             getSupportActionBar().setHomeAsUpIndicator(backArrow);
         }
 
-        FragmentManager fm = getFragmentManager();
+        FragmentManager fm = getSupportFragmentManager();
         fm.beginTransaction().replace(R.id.mycontent, new SettingsFragment()).commit();
     }
 

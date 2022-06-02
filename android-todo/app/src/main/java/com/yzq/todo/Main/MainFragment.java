@@ -1,8 +1,8 @@
 package com.yzq.todo.Main;
 
-import static android.app.Activity.RESULT_CANCELED;
 import static android.content.Context.ALARM_SERVICE;
 import static android.content.Context.MODE_PRIVATE;
+import static androidx.appcompat.app.AppCompatActivity.RESULT_CANCELED;
 
 import android.app.AlarmManager;
 import android.app.PendingIntent;
@@ -55,7 +55,6 @@ import java.io.IOException;
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.Date;
-import java.util.Objects;
 
 public class MainFragment extends AppDefaultFragment {
     private RecyclerViewEmptySupport mRecyclerView;

@@ -1,5 +1,10 @@
 package com.yzq.todo.AddToDo;
 
+import static android.content.Context.INPUT_METHOD_SERVICE;
+import static android.content.Context.MODE_PRIVATE;
+import static androidx.appcompat.app.AppCompatActivity.RESULT_CANCELED;
+import static androidx.appcompat.app.AppCompatActivity.RESULT_OK;
+
 import android.animation.Animator;
 import android.content.ClipData;
 import android.content.ClipboardManager;
@@ -24,29 +29,23 @@ import android.widget.LinearLayout;
 import android.widget.TextView;
 import android.widget.Toast;
 
-import com.yzq.todo.AppDefault.AppDefaultFragment;
-import com.yzq.todo.Main.MainActivity;
-import com.yzq.todo.Main.MainFragment;
-import com.yzq.todo.R;
-import com.yzq.todo.Utility.ToDoItem;
-import com.google.android.material.floatingactionbutton.FloatingActionButton;
-import com.wdullaer.materialdatetimepicker.date.DatePickerDialog;
-import com.wdullaer.materialdatetimepicker.time.TimePickerDialog;
-
-import java.text.SimpleDateFormat;
-import java.util.Calendar;
-import java.util.Date;
-
-import static android.app.Activity.RESULT_CANCELED;
-import static android.app.Activity.RESULT_OK;
-import static android.content.Context.INPUT_METHOD_SERVICE;
-import static android.content.Context.MODE_PRIVATE;
-
 import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.SwitchCompat;
 import androidx.appcompat.widget.Toolbar;
 import androidx.core.app.NavUtils;
+
+import com.google.android.material.floatingactionbutton.FloatingActionButton;
+import com.wdullaer.materialdatetimepicker.date.DatePickerDialog;
+import com.wdullaer.materialdatetimepicker.time.TimePickerDialog;
+import com.yzq.todo.AppDefault.AppDefaultFragment;
+import com.yzq.todo.Main.MainFragment;
+import com.yzq.todo.R;
+import com.yzq.todo.Utility.ToDoItem;
+
+import java.text.SimpleDateFormat;
+import java.util.Calendar;
+import java.util.Date;
 
 public class AddToDoFragment extends AppDefaultFragment implements DatePickerDialog.OnDateSetListener, TimePickerDialog.OnTimeSetListener {
     private static final String TAG = "AddToDoFragment";
@@ -159,7 +158,7 @@ public class AddToDoFragment extends AppDefaultFragment implements DatePickerDia
         mToDoTextBodyDescription= (EditText) view.findViewById(R.id.userToDoDescription);
         mToDoDateSwitch = (SwitchCompat) view.findViewById(R.id.toDoHasDateSwitchCompat);
 //        mLastSeenTextView = (TextView)findViewById(R.id.toDoLastEditedTextView);
-        mToDoSendFloatingActionButton = (FloatingActionButton) view.findViewById(R.id.makeToDoFloatingActionButton);
+        mToDoSendFloatingActionButton =   view.findViewById(R.id.makeToDoFloatingActionButton);
         mReminderTextView = (TextView) view.findViewById(R.id.newToDoDateTimeReminderTextView);
 
 
@@ -268,20 +267,17 @@ public class AddToDoFragment extends AppDefaultFragment implements DatePickerDia
         });
 
 
-        mToDoSendFloatingActionButton.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                if (mToDoTextBodyEditText.length() <= 0) {
-                    mToDoTextBodyEditText.setError(getString(R.string.todo_error));
-                } else if (mUserReminderDate != null && mUserReminderDate.before(new Date())) {
-                    makeResult(RESULT_CANCELED);
-                } else {
-                    makeResult(RESULT_OK);
-                    getActivity().finish();
-                }
-                hideKeyboard(mToDoTextBodyEditText);
-                hideKeyboard(mToDoTextBodyDescription);
+        mToDoSendFloatingActionButton.setOnClickListener(v -> {
+            if (mToDoTextBodyEditText.length() <= 0) {
+                mToDoTextBodyEditText.setError(getString(R.string.todo_error));
+            } else if (mUserReminderDate != null && mUserReminderDate.before(new Date())) {
+                makeResult(RESULT_CANCELED);
+            } else {
+                makeResult(RESULT_OK);
+                getActivity().finish();
             }
+            hideKeyboard(mToDoTextBodyEditText);
+            hideKeyboard(mToDoTextBodyDescription);
         });
 
 

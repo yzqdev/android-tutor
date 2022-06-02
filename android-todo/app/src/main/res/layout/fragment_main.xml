@@ -29,7 +29,7 @@
                 android:layout_height="100dp"
                 android:layout_marginTop="252dp"
                 android:contentDescription="TODO"
-                android:src="@drawable/empty_view_bg"
+                app:srcCompat="@drawable/empty_view_bg"
 
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"

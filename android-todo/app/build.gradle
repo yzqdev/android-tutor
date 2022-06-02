@@ -10,12 +10,12 @@ android {
             storePassword ''
         }
     }
-    compileSdkVersion 30
+    compileSdkVersion 31
     buildToolsVersion "30.0.3"
     defaultConfig {
         applicationId "com.yzq.todo"
         minSdkVersion 16
-        targetSdkVersion 32
+        targetSdkVersion 31
         versionCode 1
         versionName "1.0"
     }
@@ -53,4 +53,5 @@ dependencies {
     implementation 'com.github.ganfra:material-spinner:2.0.0'
     implementation 'com.wdullaer:materialdatetimepicker:4.2.3'
     implementation 'com.amulyakhare:com.amulyakhare.textdrawable:1.0.1'
+    implementation 'androidx.preference:preference:1.1.1'
 }
