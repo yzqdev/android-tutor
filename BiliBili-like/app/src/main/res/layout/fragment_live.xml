@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+>
+    <com.bilibili.lingxiao.widget.skin.SmartSkinRefreshLayout
+            android:id="@+id/refresh"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:srlPrimaryColor="@color/colorPrimary"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+    >
+        <com.scwang.smartrefresh.header.BezierCircleHeader
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+        </com.scwang.smartrefresh.header.BezierCircleHeader>
+        <com.bilibili.lingxiao.widget.ScrollerloadRecyclerView
+                android:id="@+id/live_recy"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+
+        >
+        </com.bilibili.lingxiao.widget.ScrollerloadRecyclerView>
+
+    </com.bilibili.lingxiao.widget.skin.SmartSkinRefreshLayout>
+
+    <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom|right"
+            android:layout_marginBottom="?actionBarSize"
+    >
+        <android.support.design.widget.FloatingActionButton
+                android:id="@+id/fab_live"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="end|bottom"
+                app:maxImageSize="@dimen/fab_image_size"
+                android:layout_margin="@dimen/fab_margin"
+                android:visibility="visible"
+                app:backgroundTint="@color/colorPrimary"
+                app:fabSize="normal"
+                android:scaleType="center"
+                app:layout_behavior="@string/scroll_behavior"
+                app:rippleColor="#33728dff"
+                app:srcCompat="@drawable/ic_live_entrance"
+
+        />
+    </LinearLayout>
+
+</android.support.design.widget.CoordinatorLayout>

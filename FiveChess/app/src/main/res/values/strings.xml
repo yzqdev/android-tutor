@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="main_title">Five Chess</string>
+    <string name="app_name">FiveChess</string>
+    <string name="btn_newgame">New</string>
+    <string name="btn_about">About</string>
+    <string name="btn_exit">Quit</string>
+    <string name="title_victor">win！</string>
+    <string name="title_lose">lost……</string>
+    <string name="text_victor">Congratulations!You win!</string>
+    <string name="text_lose">Keep up the good work。</string>
+    <string name="view_chess">VIEW CHESS</string>
+    <string name="back">BACK</string>
+</resources>

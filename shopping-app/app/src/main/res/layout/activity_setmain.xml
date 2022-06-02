@@ -1,0 +1,219 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/whitesmoke"
+    tools:context=".me.SetActivity">
+    <RelativeLayout
+        android:id="@+id/set_title"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/whitesmoke">
+
+        <ImageView
+            android:id="@+id/set_iv_back"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="10dp"
+            android:src="@drawable/back"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="设置"
+            android:textColor="@color/black"
+            android:textSize="20dp"
+            android:textStyle="" />
+
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/set1_pwd_layuot"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_below="@+id/set_title"
+        android:gravity="center_vertical"
+        android:background="@color/white"
+        android:orientation="horizontal"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="密码设置"
+            android:textColor="@color/black"
+            android:textSize="18sp" />
+
+        <ImageView
+            android:id="@+id/set_iv_pwd_bt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/getinto" />
+
+    </LinearLayout>
+    <TextView
+        android:id="@+id/l1"
+        android:layout_below="@id/set1_pwd_layuot"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/whitesmoke" />
+    <LinearLayout
+        android:id="@+id/set2"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:layout_below="@+id/l1"
+        android:background="@color/white"
+        android:paddingRight="10dp"
+        android:paddingLeft="10dp">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="青少年模式"
+            android:textColor="@color/black"
+            android:textSize="18sp"
+            />
+
+        <ImageView
+            android:id="@+id/set_iv_teen_bt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/getinto"
+            />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/set3"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_below="@+id/set2"
+        android:layout_marginTop="30dp"
+        android:background="@color/white"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="支付设置"
+            android:textColor="@color/black"
+            android:textSize="18sp" />
+
+        <ImageView
+
+            android:id="@+id/set_iv_pay_bt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/getinto" />
+
+    </LinearLayout>
+    <TextView
+        android:id="@+id/l2"
+        android:layout_below="@+id/set3"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/whitesmoke" />
+    <LinearLayout
+        android:id="@+id/set4"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:layout_below="@+id/l2"
+        android:background="@color/white"
+        android:paddingRight="10dp"
+        android:paddingLeft="10dp">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="新消息通知"
+            android:textColor="@color/black"
+            android:textSize="18sp"
+            />
+
+        <ImageView
+            android:id="@+id/set_iv_newmes_bt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/getinto"
+            />
+
+    </LinearLayout>
+    <TextView
+        android:id="@+id/l3"
+        android:layout_below="@+id/set4"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/whitesmoke" />
+    <LinearLayout
+        android:id="@+id/set5"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:layout_below="@+id/l3"
+        android:background="@color/white"
+        android:paddingRight="10dp"
+        android:paddingLeft="10dp">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="通用"
+            android:textColor="@color/black"
+            android:textSize="18sp"
+            />
+
+        <ImageView
+            android:id="@+id/set_iv_normal_bt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/getinto"
+            />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/set6"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:layout_below="@+id/set5"
+        android:background="@color/white"
+        android:layout_marginTop="30dp"
+        android:paddingRight="10dp"
+        android:paddingLeft="10dp">
+
+        <TextView
+            android:id="@+id/set_tv_chageuser_bt"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="切换账户"
+            android:textColor="@color/black"
+            android:textSize="18sp"
+            android:gravity="center"
+            />
+
+
+
+    </LinearLayout>
+</RelativeLayout>

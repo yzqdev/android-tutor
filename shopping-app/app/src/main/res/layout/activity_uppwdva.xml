@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".login.UpPwdVaActivity">
+    <RelativeLayout
+        android:id="@+id/RL_1"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/whitesmoke">
+
+        <ImageView
+            android:id="@+id/uppwdva_iv_back"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="10dp"
+            android:src="@drawable/back"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="修改密码"
+            android:textColor="@color/black"
+            android:textSize="20dp"
+            android:textStyle="" />
+
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/uppwd_q_tv"
+        android:layout_below="@+id/RL_1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="80dp"
+        android:layout_marginLeft="30dp"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:textColor="@color/nav_normal"
+        android:text="密保问题：" />
+
+    <EditText
+        android:id="@+id/uppwd_q_ev"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/uppwd_q_tv"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="5dp"
+        android:background="@drawable/et_bg"
+        android:enabled="false" />
+
+    <TextView
+        android:id="@+id/uppwd_a_tv"
+        android:layout_below="@+id/uppwd_q_ev"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:layout_marginLeft="30dp"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:textColor="@color/nav_normal"
+        android:text="请回答：" />
+
+    <EditText
+        android:id="@+id/uppwd_a_ev"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/uppwd_a_tv"
+        android:textSize="18sp"
+        android:textColor="@color/black"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="5dp"
+        android:background="@drawable/et_bg"
+
+        />
+
+    <Button
+        android:id="@+id/uppwd_sure_btn"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:text="确认"
+        android:textColor="@color/nav_fouces"
+        android:background="@drawable/btn_bg"
+        android:layout_below="@id/uppwd_a_ev"
+        android:layout_marginTop="50dp"
+        android:layout_centerHorizontal="true"/>
+
+</RelativeLayout>

@@ -1,0 +1,315 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Global string -->
+    <string name="app_name">Download Navi</string>
+    <string name="foreground_notification">前台通知</string>
+    <string name="download_running">进行中</string>
+    <string name="finished">已完成</string>
+    <string name="shutdown">关闭</string>
+    <!-- 1 d. 1 h. 1 m -->
+    <string name="elapsed_time_format_d_h_mm">%1$d 天 %2$d 小时 %3$d 分</string>
+    <!-- 1 h. 1 m. 1 s -->
+    <string name="elapsed_time_format_h_mm_ss">%1$d 小时 %2$d 分 %3$d 秒</string>
+    <!-- 1 m. 1 s -->
+    <string name="elapsed_time_format_mm_ss">%1$d 分 %2$d 秒</string>
+    <!-- 1 s -->
+    <string name="elapsed_time_format_ss">%1$d 秒</string>
+    <string name="ok">确定</string>
+    <string name="cancel">取消</string>
+    <!-- A synonym for word "unmetered" - unlimited-->
+    <string name="unmetered_connections_only">只使用不按流量计费的连接</string>
+    <string name="connect">连接</string>
+    <string name="add">添加</string>
+    <string name="not_available">N/A</string>
+    <string name="open_navigation_drawer">打开导航抽屉</string>
+    <string name="close_navigation_drawer">关闭导航抽屉</string>
+    <string name="error_template">错误: %1$s</string>
+    <string name="pause">暂停</string>
+    <string name="resume">恢复</string>
+    <string name="stop">停止</string>
+    <string name="stopped">已停止</string>
+    <string name="pending">待处理</string>
+    <string name="delete">删除</string>
+    <string name="share">分享</string>
+    <string name="menu">菜单</string>
+    <string name="select_all">全选</string>
+    <string name="share_via">分享方式</string>
+    <string name="no">否</string>
+    <string name="yes">是</string>
+    <string name="error">错误</string>
+    <string name="file">文件</string>
+    <string name="folder">目录</string>
+    <string name="downloading_metadata">下载元数据</string>
+    <string name="all">所有</string>
+    <string name="search">搜索</string>
+    <string name="settings">设置</string>
+    <string name="about">关于</string>
+    <string name="close">关闭</string>
+    <string name="redownload">重新下载</string>
+    <string name="Default">默认</string>
+    <string name="warning">警告</string>
+    <string name="apply">应用</string>
+    <string name="report">反馈</string>
+    <string name="more_details">更多详情</string>
+    <string name="clipboard">剪贴板</string>
+    <string name="verify">验证</string>
+    <!-- Permission dialog -->
+    <string name="perm_denied_title">权限不足</string>
+    <string name="perm_denied_warning">如果没有此权限，应用无法在某些设备和 Android 版本的内存中保存文件。该应用程序将无法正常工作。您确定要拒绝此权限吗？</string>
+    <!-- Download progress notification -->
+    <string name="download_ticker_notify">正在下载 %1$s</string>
+    <!-- Foreground notification -->
+    <string name="app_running_in_the_background">Download Navi 正在后台运行</string>
+    <string name="pause_all">全部暂停</string>
+    <string name="resume_all">全部恢复</string>
+    <!-- Finish notification -->
+    <string name="download_finished_notify">下载完成</string>
+    <string name="open_using">打开方式</string>
+    <!-- Pending notification -->
+    <string name="download_in_queue_ticker_notify">%1$s 排队</string>
+    <string name="waiting_for_network">等待网络</string>
+    <string name="waiting_for_retry">等待重试</string>
+    <!-- Error notification -->
+    <string name="download_error_notify_title">下载出错</string>
+    <!-- Applying params notification -->
+    <string name="applying_params_title">应用参数</string>
+    <string name="applying_params_for_downloads">应用参数进行下载</string>
+    <string name="applying_params_error_title">应用参数错误 %1$s</string>
+    <!-- Add download dialog -->
+    <string name="add_download">添加下载</string>
+    <string name="download_link">链接</string>
+    <string name="download_name">名称</string>
+    <string name="download_size">大小: %1$s</string>
+    <string name="download_retry">重试</string>
+    <string name="download_advanced">高级</string>
+    <string name="download_user_agent">用户代理</string>
+    <string name="download_error_empty_link">请输入链接</string>
+    <string name="download_error_empty_name">请输入名称</string>
+    <string name="download_error_no_enough_free_space">可用空间不足: %1$s 可用，但文件大小为 %2$s</string>
+    <string name="download_error_name_is_not_correct">正确的名称是 \"%1$s\"</string>
+    <string name="fetch_error_default_fmt">错误: %1$s</string>
+    <string name="fetch_error_invalid_url">网址无效: %1$s</string>
+    <string name="fetch_error_network_disconnected">网络已断开</string>
+    <string name="fetch_error_http_response">错误：服务器返回 HTTP %1$d 错误代码</string>
+    <string name="fetch_error_io">IO 错误: %1$s</string>
+    <string name="unable_to_open_folder">无法打开所选文件夹。请尝试选择其他文件夹</string>
+    <string name="unable_to_create_file">无法创建文件。请尝试选择其他文件夹</string>
+    <string name="partial_download_not_supported">此次下载不支持暂停和多线程分段下载</string>
+    <string name="download_pieces_number_title">分块数</string>
+    <string name="download_description">描述</string>
+    <string name="select_folder_to_save">选择要保存的目录</string>
+    <string name="path">路径</string>
+    <string name="storage_free_space">可用空间: %1$s</string>
+    <string name="add_download_error_invalid_url">无法添加下载：网址无效</string>
+    <string name="checksum">校验和</string>
+    <string name="add_dialog_checksum_description">MD5 和 SHA 256</string>
+    <string name="referer_description">%1$s 标头</string>
+    <string name="error_invalid_checksum">无效校验和</string>
+    <!-- Add user agent dialog -->
+    <string name="dialog_add_user_agent_title">添加用户代理</string>
+    <!-- Main activity -->
+    <string name="fragment_title_queued">队列中</string>
+    <string name="fragment_title_completed">已完成</string>
+    <string name="download_list_empty">没有下载任务</string>
+    <string name="share_url">分享网址</string>
+    <string name="file_not_available">文件不可用！</string>
+    <plurals name="unable_sharing">
+        <item quantity="other">无法共享文件。</item>
+    </plurals>
+    <!-- Navigation drawer -->
+    <!-- Category -->
+    <string name="drawer_category">类型</string>
+    <string name="drawer_category_others">其它</string>
+    <string name="drawer_category_documents">文档</string>
+    <string name="drawer_category_images">图片</string>
+    <string name="drawer_category_video">视频</string>
+    <string name="drawer_category_apk">软件包</string>
+    <string name="drawer_category_audio">音频</string>
+    <string name="drawer_category_archives">压缩文件</string>
+    <!-- Status -->
+    <string name="drawer_status">状态</string>
+    <string name="drawer_status_running">运行中</string>
+    <string name="drawer_status_stopped">已停止</string>
+    <!-- Date added -->
+    <string name="drawer_date_added">添加日期</string>
+    <string name="drawer_date_added_today">今天</string>
+    <string name="drawer_date_added_yesterday">昨天</string>
+    <string name="drawer_date_added_week">周</string>
+    <string name="drawer_date_added_month">月</string>
+    <string name="drawer_date_added_year">年</string>
+    <!-- Sorting -->
+    <string name="drawer_sorting">排序</string>
+    <string name="drawer_sorting_date_added">添加日期</string>
+    <string name="drawer_sorting_name">名称</string>
+    <string name="drawer_sorting_size">大小</string>
+    <string name="drawer_sorting_category">类别</string>
+    <string name="drawer_sorting_no_sorting">不排序</string>
+    <!-- Download list item -->
+    <!-- downloaded/total • ETA • speed -->
+    <string name="download_queued_progress_template">%1$s/%2$s \u2022 %3$s \u2022 %4$s/s</string>
+    <!-- downloaded/total • status -->
+    <string name="download_queued_template">%1$s/%2$s \u2022 %3$s</string>
+    <!-- hostname • total -->
+    <string name="download_finished_template">%1$s \u2022 %2$s</string>
+    <string name="download_details">详情</string>
+    <string name="deleting">删除</string>
+    <string name="delete_selected_download">删除所选下载？此操作无法撤消</string>
+    <string name="delete_selected_downloads">删除所选下载？此操作无法撤消</string>
+    <string name="delete_with_downloaded_file">同时删除已下载文件</string>
+    <string name="error_verify_checksum">无效的文件校验和</string>
+    <!-- Filemanager dialog -->
+    <string name="dir_chooser_title">目录选择</string>
+    <string name="file_chooser_title">文件选择</string>
+    <string name="dialog_new_folder_title">新建文件夹</string>
+    <string name="error_dialog_new_folder">无法创建新文件夹</string>
+    <string name="error_open_dir">无法打开文件夹</string>
+    <string name="home_directory">主页</string>
+    <!-- name (size) -->
+    <string name="permission_denied">权限不足</string>
+    <string name="save_file">保存文件</string>
+    <string name="file_name">文件名</string>
+    <string name="error_file_exists">文件已存在。要覆盖吗？</string>
+    <string name="file_name_is_empty">文件名不能为空</string>
+    <string name="system_manager">系统文件管理器</string>
+    <string name="device_does_not_support_this_feature">您的设备不支持此功能</string>
+    <string name="system_file_manager_not_found">找不到系统文件管理器</string>
+    <string name="replace_file">替换文件</string>
+    <!-- Details download dialog -->
+    <string name="detail_downloaded">已下载</string>
+    <!-- downloaded/total (percent) -->
+    <string name="detail_downloaded_format">%1$s/%2$s (%3$d%%)</string>
+    <string name="detail_pieces">线程</string>
+    <string name="detail_date_added">添加日期</string>
+    <string name="detail_user_agent">用户代理</string>
+    <string name="detail_md5_hash_sum">MD5</string>
+    <string name="detail_sha256_hash_sum">SHA-256</string>
+    <string name="calculate">计算</string>
+    <!-- Error report -->
+    <string name="app_error_occurred">发生了应用程序错误。您可以将报告发送给开发人员</string>
+    <string name="error_comment_prompt">您可以在此处添加额外信息和评论：</string>
+    <!-- Send text to clipboard -->
+    <string name="send_text_to_clipboard">复制</string>
+    <string name="text_copied_to_clipboard">文本已复制到剪贴板</string>
+    <!-- Browser -->
+    <string name="browser">浏览器</string>
+    <string name="browser_app">Navi 浏览器</string>
+    <string name="webview_is_required">需要 WebView 才能工作</string>
+    <string name="browser_forward_arrow">前进</string>
+    <string name="browser_desktop_version">桌面版本</string>
+    <string name="browser_address_bar_hint">输入网站地址或搜索词</string>
+    <string name="browser_back_pressed">再按一次退出</string>
+    <string name="browser_secure_connection">安全连接</string>
+    <string name="browser_download_from_link">下载</string>
+    <string name="browser_copy_link">复制链接</string>
+    <!-- Browser bookmarks -->
+    <string name="browser_bookmarks">书签</string>
+    <string name="bookmarks_list_empty">没有书签</string>
+    <string name="browser_add_bookmark">添加书签</string>
+    <string name="browser_edit_bookmark">编辑书签</string>
+    <!-- Edit bookmark dialog -->
+    <string name="browser_bookmark_name">名称</string>
+    <string name="browser_bookmark_url">URL</string>
+    <string name="browser_bookmark_error_empty_url">请输入 URL</string>
+    <string name="browser_bookmark_error_empty_name">请输入名称</string>
+    <plurals name="browser_bookmark_deleted">
+        <item quantity="other">书签已删除</item>
+    </plurals>
+    <plurals name="browser_bookmark_delete_failed">
+        <item quantity="other">删除书签失败</item>
+    </plurals>
+    <string name="browser_bookmark_change_failed">修改书签失败</string>
+    <string name="browser_bookmark_added">已添加书签</string>
+    <string name="browser_bookmark_add_failed">添加书签失败</string>
+    <string name="browser_bookmark_edit_menu">编辑</string>
+    <!-- Settings -->
+    <!-- Headers -->
+    <string name="pref_header_appearance">外观</string>
+    <string name="pref_header_behavior">行为设置</string>
+    <string name="pref_header_limitations">限制</string>
+    <string name="pref_header_storage">存储</string>
+    <string name="pref_header_browser">浏览器</string>
+    <!-- Appearance settings -->
+    <string name="pref_theme_category">主题设置</string>
+    <string name="pref_theme_title">主题</string>
+    <!-- pref_theme_entries -->
+    <string name="pref_theme_entries_0">亮色</string>
+    <string name="pref_theme_entries_1">暗色</string>
+    <string name="pref_theme_entries_2">黑色</string>
+    <string name="pref_notification_category">通知设置</string>
+    <string name="pref_progress_notify_title">进度通知</string>
+    <string name="pref_finish_notify_title">完成通知</string>
+    <string name="pref_pending_notify_title">待下载通知</string>
+    <string name="pref_play_sound_notify_title">播放声音</string>
+    <string name="pref_notify_sound_title">通知声音</string>
+    <string name="pref_led_indicator_notify_title">LED 指示灯</string>
+    <string name="pref_led_indicator_color_notify_title">LED指示灯颜色</string>
+    <string name="pref_vibration_notify_title">振动</string>
+    <string name="theme_settings_apply_after_reboot">主题设置将在重新启动软件后生效</string>
+    <!-- Behavior settings -->
+    <string name="pref_autostart_title">自动启动</string>
+    <string name="pref_autostart_summary">启动设备后运行应用程序并开始下载未被手动暂停的任务</string>
+    <!-- A synonym for word "unmetered" - unlimited-->
+    <string name="pref_umnetered_connections_only_title">只使用不按流量计费的连接</string>
+    <string name="pref_umnetered_connections_only_summary">仅允许未计量的连接下载（例如 Wi-Fi 或以太网）</string>
+    <string name="pref_power_management_category">电源管理</string>
+    <string name="pref_cpu_do_not_sleep_title">保持 CPU 唤醒</string>
+    <string name="pref_cpu_do_not_sleep_summary">启用此功能会增加电池使用量。如果屏幕关闭时下载速度降低，请启用此选项</string>
+    <string name="pref_download_only_when_charging_title">仅在充电时下载</string>
+    <string name="pref_download_only_when_charging_summary">如果启用，则仅在充电期间进行下载。未连接充电器时，所有下载都会暂停</string>
+    <string name="pref_battery_control_title">电池控制</string>
+    <string name="pref_custom_battery_control_title">自定义电池百分比</string>
+    <string name="pref_custom_battery_control_value_title">电池控制百分比</string>
+    <string name="pref_battery_control_summary">在电量低于 %1$d%% 时暂停所有下载。此限制在充电时不适用</string>
+    <string name="pref_custom_battery_control_summary">自定义一个百分比值，当电量低于此阈值时暂停下载。启用此选项将忽略默认的 %1$d%% 阈值</string>
+    <string name="pref_custom_battery_control_dialog_summary">在下载过程中，为应用程序设置自定义电池百分比将对电池寿命产生负面影响。你确定要启用它吗？</string>
+    <string name="pref_enable_roaming_title">允许漫游</string>
+    <string name="pref_enable_roaming_summary">仅在设备未漫游时下载</string>
+    <string name="pref_replace_duplicate_downloads_title">替换重复下载</string>
+    <string name="pref_replace_duplicate_downloads_summary">替换已添加到列表中的重复下载（使用相同的 URL）</string>
+    <string name="pref_auto_connect_title">自动连接</string>
+    <string name="pref_auto_connect_summary">在打开添加下载对话框时自动连接下载地址</string>
+    <string name="pref_timeout_title">超时</string>
+    <string name="pref_timeout_summary">等待连接超时的毫秒数。零被解释为无限超时</string>
+    <!-- Limitation settings -->
+    <string name="pref_max_active_downloads_title">最大同时下载任务</string>
+    <string name="pref_max_download_retries_title">最大下载重试次数</string>
+    <string name="pref_max_download_retries_dialog_msg">0 - 不重试</string>
+    <string name="pref_speed_limit_title">单个下载速度限制</string>
+    <string name="pref_speed_limit_dialog_hint">设置速度，单位 KiB/s (0 代表无限制)</string>
+    <!-- Storage settings -->
+    <string name="pref_save_downloads_in_title">下载保存目录</string>
+    <string name="pref_move_after_download_title">下载后移动</string>
+    <string name="pref_move_after_download_in_title">下载后移动目录</string>
+    <string name="pref_delete_file_if_error_title">发生错误后删除文件</string>
+    <string name="pref_preallocate_disk_space_title">为下载的文件预分配磁盘空间</string>
+    <string name="pref_preallocate_disk_space_summary">只在 Android 5.0 Lollipop 及以上版本可用</string>
+    <!-- Browser settings -->
+    <string name="pref_browser_bottom_address_bar_title">地址栏在底部</string>
+    <string name="pref_browser_bottom_address_bar_summary">地址栏将位于屏幕底部</string>
+    <string name="pref_browser_start_page_title">起始页</string>
+    <string name="pref_browser_allow_java_script_title">允许 JavaScript</string>
+    <string name="pref_browser_allow_popup_windows_title">允许弹出窗口</string>
+    <string name="pref_browser_cache_category">缓存</string>
+    <string name="pref_browser_cookies_category">Cookies</string>
+    <string name="pref_browser_enable_caching_title">启用缓存</string>
+    <string name="pref_browser_enable_cookies_title">启用 Cookies</string>
+    <string name="pref_browser_delete_cookies_title">删除 Cookies</string>
+    <string name="pref_browser_delete_cookies_done">删除所有 Cookies</string>
+    <string name="pref_browser_clear_cache_title">清除缓存</string>
+    <string name="pref_browser_clear_cache_done">缓存已清除</string>
+    <string name="pref_browser_do_not_track_title">不要跟踪</string>
+    <string name="pref_browser_do_not_track_summary">向您访问的网站发送“不要跟踪”请求</string>
+    <string name="pref_browser_launcher_icon_title">启动器中的浏览器图标</string>
+    <string name="pref_browser_disable_from_system_title">从系统中禁用浏览器</string>
+    <string name="pref_browser_disable_from_system_summary">将无法使用 Navi 浏览器打开链接</string>
+    <string name="pref_browser_search_engine_title">搜索引擎</string>
+    <string name="pref_browser_hide_menu_icon_title">在菜单中隐藏图标</string>
+    <string name="pref_browser_hide_menu_icon_summary">在主屏幕菜单中隐藏浏览器图标</string>
+    <!-- About dialog -->
+    <string name="about_title">关于 Download Navi</string>
+    <string name="about_description"><![CDATA[    访问此网站获取更多信息或者帮助项目: <a href="https://github.com/TachibanaGeneralLaboratories/download-navi">https://github.com/TachibanaGeneralLaboratories/download-navi</a><br><br>
+    Download Navi 是适用于 Android 4.4 及以上版本的免费且开源的下载管理器<br><br>
+    Download Navi 是一款自由软件，遵循 <a href="http://www.gnu.org/copyleft/gpl.html">GNU General Public License v3 (GPLv3)</a> 许可证的条款发布<br><br>
+    <a href="https://github.com/TachibanaGeneralLaboratories/download-navi/blob/HEAD/PRIVACY.md">隐私政策</a>]]></string>
+    <string name="about_changelog">更新日志</string>
+</resources>

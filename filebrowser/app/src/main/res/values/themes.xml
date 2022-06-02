@@ -1,0 +1,11 @@
+<resources>
+
+    <style name="Theme.Filebrowser.NoActionBar" parent="Theme.MaterialComponents.DayNight.DarkActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+    <style name="Theme.Filebrowser.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+    <style name="Theme.Filebrowser.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+</resources>

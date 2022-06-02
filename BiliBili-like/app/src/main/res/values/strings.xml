@@ -1,0 +1,136 @@
+<resources>
+    <string name="app_name">BiliBili</string>
+    <string name="open">open</string>
+    <string name="close">close</string>
+
+    <!--login-->
+    <string name="login_title">登录</string>
+    <string name="register_text">注册</string>
+    <string name="forget_password">忘记密码？</string>
+    <string name="input_username">请输入用户名</string>
+    <string name="input_password">请输入密码</string>
+    <string name="un_login">未登陆</string>
+    <string name="login_then_next">请登录后再试！( • ̀ω•́ )✧</string>
+    <string name="dynamic_login">想看最新的UP主动态？快来登录吧！</string>
+
+    <string name="search_bar_hint">搜索视频、番剧、UP主或av号</string>
+    <string name="search_everyone">大家都在搜</string>
+    <string name="cancel">取消</string>
+
+    <string-array name="main_tab">
+        <item>直播</item>
+        <item>推荐</item>
+        <item>分区</item>
+        <item>追番</item>
+        <item>动态</item>
+        <item>发现</item>
+    </string-array>
+
+    <!--live-->
+    <string-array name="live_tab">
+        <item>互动</item>
+        <item>主播</item>
+        <item>贡献榜</item>
+        <item>大航海</item>
+    </string-array>
+    <string name="nav_follow">关注</string>
+    <string name="nav_entertainment">娱乐</string>
+    <string name="nav_game">游戏</string>
+    <string name="nav_mobile_game">手游</string>
+    <string name="nav_painting">绘画</string>
+    <string name="scroll_behavior">com.bilibili.lingxiao.widget.behavior.ScrollAwareFabBehaviorDefault</string>
+    <string name="player_behavior">com.bilibili.lingxiao.widget.behavior.PlayerBehavior</string>
+
+    <string-array name="live_fans">
+        <item>金瓜子榜</item>
+        <item>礼物榜</item>
+        <item>粉丝榜</item>
+    </string-array>
+    <string-array name="live_all">
+        <item>最热直播</item>
+        <item>最新开播</item>
+    </string-array>
+    <string name="live_all_title">全部直播</string>
+
+    <!--comment-->
+    <string name="comment_detail">评论详情</string>
+
+    <string name="pop_watch_later">添加至稍后再看</string>
+
+    <string name="bangumi_cn">国漫推荐</string>
+    <string name="bangumi_jp">番剧推荐</string>
+    <string name="bangumi_edit">编辑推荐</string>
+    <!--bangumi detail-->
+    <string name="share_text">分享</string>
+    <string name="bangumi_chasing_text">追番</string>
+    <string name="bangumi_download_text">下载</string>
+    <string name="bangumi_contract_me">请承包我吧！</string>
+    <string name="bangumi_contract_message">快来抢占七日榜！！！(≧∇≦)ﾉ</string>
+    <string name="bangumi_evaluate_default">古枪vs现代枪，绝望之战—— \n 全世界因核战争而荒废，在那之后的时代——。在世界帝府的绝对统治之下，
+        人们全都受到管制，在被夺走了自由的世界中生存。 但，在一切武力均被禁止之时，还存在着为了打破世界帝的独...
+    </string>
+    <string-array name="level_drawable">
+        <item>@drawable/mall_mine_vip_level_0</item>
+        <item>@drawable/mall_mine_vip_level_1</item>
+        <item>@drawable/mall_mine_vip_level_2</item>
+        <item>@drawable/mall_mine_vip_level_3</item>
+        <item>@drawable/mall_mine_vip_level_4</item>
+        <item>@drawable/mall_mine_vip_level_5</item>
+        <item>@drawable/mall_mine_vip_level_6</item>
+    </string-array>
+
+
+    <!--find-->
+    <string name="find_line_interest">兴趣圈</string>
+    <string name="find_line_topic">话题中心</string>
+    <string name="find_line_activity">活动中心</string>
+    <string name="find_line_blackdoor">小黑屋</string>
+
+    <string name="find_line_top_original">原创排行榜</string>
+    <string name="find_line_top_all">全区排行榜</string>
+
+    <string name="find_line_game_center">游戏中心</string>
+    <string name="find_line_shop">周边商城</string>
+
+    <!--search detail-->
+    <string-array name="search_type">
+        <item>默认排序</item>
+        <item>全部时长</item>
+        <item>全部分区</item>
+    </string-array>
+
+    <!-- top list-->
+    <string-array name="origin_ranking_list">
+        <item>原创</item>
+        <item>全站</item>
+        <item>番剧</item>
+    </string-array>
+    <string name="show_all_ranking_list_video">显示此UP主全部上榜视频</string>
+    <!--<string name="search_sort_type">默认排序</string>-->
+    <!--<string name="search_all_time">全部时长</string>-->
+    <!--<string name="search_all_region">全部分区</string>-->
+
+    <!--setting-->
+    <string name="account_info">账号资料</string>
+    <string name="security_private">安全隐私</string>
+    <string name="take_goods_info">收货信息</string>
+
+    <string name="play_setting">播放设置</string>
+    <string name="decode_setting">解码设置</string>
+    <string name="danmaku_setting">弹幕设置</string>
+    <string name="offline_setting">离线设置</string>
+    <string name="bangumi_setting">追番设置</string>
+    <string name="dynamic_setting">动态设置</string>
+    <string name="push_message">推送与消息</string>
+    <string name="clean_sdcard">清理存储空间</string>
+    <string name="other_setting">其他设置</string>
+    <string name="my_service">我的客服</string>
+    <string name="help">帮助</string>
+    <string name="exit_account">退出登录</string>
+    <string name="find_searching">搜索中</string>
+    <string name="reset_app_change">下次进入Bilibili生效</string>
+    <string name="not_idcard_approve">未身份认证</string>
+    <string name="set_up_bordcast">设置主播公告</string>
+
+
+</resources>

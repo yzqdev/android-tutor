@@ -1,0 +1,332 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Global string -->
+    <string name="app_name">Download Navi</string>
+    <string name="foreground_notification">التطبيقات التي تعمل في الخلفية</string>
+    <string name="download_running">جار المعالجة</string>
+    <string name="finished">إنتهى</string>
+    <string name="shutdown">إغلاق</string>
+    <!-- 1 d. 1 h. 1 m -->
+    <string name="elapsed_time_format_d_h_mm">%1$dيوم. %2$dساعة. %3$d دقيقة</string>
+    <!-- 1 h. 1 m. 1 s -->
+    <string name="elapsed_time_format_h_mm_ss">%1$dساعة. %2$dدقيقة. %3$d ثانية</string>
+    <!-- 1 m. 1 s -->
+    <string name="elapsed_time_format_mm_ss">%1$dدقيقة. %2$d ثانية</string>
+    <!-- 1 s -->
+    <string name="elapsed_time_format_ss">%1$d ثانية</string>
+    <string name="ok">حسناً</string>
+    <string name="cancel">إلغاء</string>
+    <!-- A synonym for word "unmetered" - unlimited-->
+    <string name="unmetered_connections_only">الاتصالات الغير محدودة فقط</string>
+    <string name="connect">أبدا</string>
+    <string name="add">إضافة</string>
+    <string name="not_available">غير متوفر</string>
+    <string name="open_navigation_drawer">فتح القائمة الجانبية</string>
+    <string name="close_navigation_drawer">إغلاق القائمة الجانبية</string>
+    <string name="error_template">خطأ: %1$s</string>
+    <string name="pause">إيقاف مؤقت</string>
+    <string name="resume">استئناف</string>
+    <string name="stop">إيقاف</string>
+    <string name="stopped">متوقف</string>
+    <string name="pending">مُعلقّة</string>
+    <string name="delete">حذف</string>
+    <string name="share">مشاركة</string>
+    <string name="menu">القائمة</string>
+    <string name="select_all">تحديد الكل</string>
+    <string name="share_via">مشاركة عبر</string>
+    <string name="no">لا</string>
+    <string name="yes">نعم</string>
+    <string name="error">خطأ</string>
+    <string name="file">الملف</string>
+    <string name="folder">المجلد</string>
+    <string name="downloading_metadata">تنزيل البيانات الوصفية</string>
+    <string name="all">الكل</string>
+    <string name="search">بحث</string>
+    <string name="settings">الإعدادات</string>
+    <string name="about">حول التطبيق</string>
+    <string name="close">إغلاق</string>
+    <string name="redownload">إعادة التنزيل</string>
+    <string name="Default">الإفتراضي</string>
+    <string name="warning">تحذير</string>
+    <string name="apply">تطبيق</string>
+    <string name="report">إبلاغ</string>
+    <string name="more_details">المزيد من التفاصيل</string>
+    <string name="clipboard">الحافظة</string>
+    <string name="verify">تحقق</string>
+    <!-- Permission dialog -->
+    <string name="perm_denied_title">الإذن مرفوض</string>
+    <string name="perm_denied_warning">التطبيق بدون هذا الإذن لا يمكنه حفظ الملفات في الذاكرة في بعض الأجهزة وإصدارات الاندرويد. ولن يعمل التطبيق بالشكل المطلوب. هل أنت متأكد من أنك تريد رفض هذا الإذن؟</string>
+    <!-- Download progress notification -->
+    <string name="download_ticker_notify">جارٍ تنزيل %1$s</string>
+    <!-- Foreground notification -->
+    <string name="app_running_in_the_background">Download Navi يعمل في الخلفية</string>
+    <string name="pause_all">إيقاف مؤقت للكل</string>
+    <string name="resume_all">إستئناف الكل</string>
+    <!-- Finish notification -->
+    <string name="download_finished_notify">انتهى التحميل</string>
+    <string name="open_using">فتح بأستخدام</string>
+    <!-- Pending notification -->
+    <string name="download_in_queue_ticker_notify">%1$s في قائمة الانتظار</string>
+    <string name="waiting_for_network">في إنتظار الشبكة</string>
+    <string name="waiting_for_retry">في إنتظار إعادة المحاولة</string>
+    <!-- Error notification -->
+    <string name="download_error_notify_title">خطأ في التنزيل</string>
+    <!-- Applying params notification -->
+    <string name="applying_params_title">تطبيق params</string>
+    <string name="applying_params_for_downloads">تطبيق Params للتنزيلات</string>
+    <string name="applying_params_error_title">خطأ في تطبيق params ل %1$s</string>
+    <!-- Add download dialog -->
+    <string name="add_download">إضافة تحميل</string>
+    <string name="download_link">الرابط</string>
+    <string name="download_name">الاسم</string>
+    <string name="download_size">الحجم: %1$s</string>
+    <string name="download_retry">أعد المحاولة</string>
+    <string name="download_advanced">إعدادات متقدمة</string>
+    <string name="download_user_agent">وكيل المستخدم</string>
+    <string name="download_error_empty_link">يرجى إدخال الرابط</string>
+    <string name="download_error_empty_name">الرجاء إدخال الأسم</string>
+    <string name="download_error_no_enough_free_space">المساحة الحرة غير كافية: %1$s المتوفرة ، ولكن حجم الملف %2$s</string>
+    <string name="download_error_name_is_not_correct">الاسم الصحيح هو \"%1$s\"</string>
+    <string name="fetch_error_default_fmt">خطأ: %1$s</string>
+    <string name="fetch_error_invalid_url">الرابط غير صالح: %1$s</string>
+    <string name="fetch_error_network_disconnected">تم قطع الاتصال بالشبكة</string>
+    <string name="fetch_error_http_response">خطأ: السيرفر ارسل كود HTTP %1$d</string>
+    <string name="fetch_error_io">حصل خطأ: %1$s</string>
+    <string name="unable_to_open_folder">غير قادر على فتح المجلد المحدد. الرجاء تحديد مجلد آخر</string>
+    <string name="unable_to_create_file">غير قادر على إنشاء الملف. الرجاء تحديد مجلد آخر</string>
+    <string name="partial_download_not_supported">لا يدعم هذا التحميل الإيقاف وتحميله بالاجزاء</string>
+    <string name="download_pieces_number_title">عدد الاجزاء</string>
+    <string name="download_description">الوصف</string>
+    <string name="select_folder_to_save">حدد مجلد الحفظ</string>
+    <string name="path">المسار</string>
+    <string name="storage_free_space">المساحه الحره: %1$s</string>
+    <string name="add_download_error_invalid_url">لايمكن اضافة التحميل: الرابط غير صحيح</string>
+    <string name="checksum">المجموع الاختباري</string>
+    <string name="add_dialog_checksum_description">MD5, SHA-256</string>
+    <string name="referer_description">%1$s رأس</string>
+    <string name="error_invalid_checksum">المجموع الاختباري غير صالح</string>
+    <!-- Add user agent dialog -->
+    <string name="dialog_add_user_agent_title">إضافة وكيل المستخدم</string>
+    <!-- Main activity -->
+    <string name="fragment_title_queued">في قائمة الإنتظار</string>
+    <string name="fragment_title_completed">المكتملة</string>
+    <string name="download_list_empty">لا توجد تنزيلات</string>
+    <string name="share_url">مشاركة الرابط</string>
+    <string name="file_not_available">الملف غير متوفر!</string>
+    <plurals name="unable_sharing">
+        <item quantity="zero">لا يمكن مشاركة الملف.</item>
+        <item quantity="one">لا يمكن مشاركة الملف.</item>
+        <item quantity="two">لا يمكن مشاركة الملف.</item>
+        <item quantity="few">لا يمكن مشاركة الملف.</item>
+        <item quantity="many">لا يمكن مشاركة الملفات.</item>
+        <item quantity="other">لا يمكن مشاركة الملفات.</item>
+    </plurals>
+    <!-- Navigation drawer -->
+    <!-- Category -->
+    <string name="drawer_category">الفئة</string>
+    <string name="drawer_category_others">أخرى</string>
+    <string name="drawer_category_documents">المستندات</string>
+    <string name="drawer_category_images">الصور</string>
+    <string name="drawer_category_video">الفيديو</string>
+    <string name="drawer_category_apk">ملفات APK</string>
+    <string name="drawer_category_audio">الصوتيات</string>
+    <string name="drawer_category_archives">الأرشيف</string>
+    <!-- Status -->
+    <string name="drawer_status">الحالة</string>
+    <string name="drawer_status_running">قيد التنفيذ</string>
+    <string name="drawer_status_stopped">متوقف</string>
+    <!-- Date added -->
+    <string name="drawer_date_added">تاريخ الإضافة</string>
+    <string name="drawer_date_added_today">اليوم</string>
+    <string name="drawer_date_added_yesterday">الأمس</string>
+    <string name="drawer_date_added_week">أسبوع</string>
+    <string name="drawer_date_added_month">شهر</string>
+    <string name="drawer_date_added_year">سنة</string>
+    <!-- Sorting -->
+    <string name="drawer_sorting">الفرز</string>
+    <string name="drawer_sorting_date_added">تاريخ الإضافة</string>
+    <string name="drawer_sorting_name">الاسم</string>
+    <string name="drawer_sorting_size">الحجم</string>
+    <string name="drawer_sorting_category">الفئة</string>
+    <string name="drawer_sorting_no_sorting">بدون فرز</string>
+    <!-- Download list item -->
+    <!-- downloaded/total • ETA • speed -->
+    <string name="download_queued_progress_template">%1$s/%2$s \u2022 %3$s \u2022 %4$s/ثانية</string>
+    <!-- downloaded/total • status -->
+    <string name="download_queued_template">%1$s/%2$s \u2022 %3$s</string>
+    <!-- hostname • total -->
+    <string name="download_finished_template">%1$s \u2022 %2$s</string>
+    <string name="download_details">التفاصيل</string>
+    <string name="deleting">حذف</string>
+    <string name="delete_selected_download">حذف التنزيل المحدد؟ لا يمكن التراجع عن هذه العملية</string>
+    <string name="delete_selected_downloads">حذف ملف التنزيل المحدد؟ لا يمكن التراجع عن هذه العملية</string>
+    <string name="delete_with_downloaded_file">حذف التحميل مع الملف الذي تم تنزيله</string>
+    <string name="error_verify_checksum">المجموع الاختباري للملف غير صالح</string>
+    <!-- Filemanager dialog -->
+    <string name="dir_chooser_title">اختيار مجلد</string>
+    <string name="file_chooser_title">اختيار ملف</string>
+    <string name="dialog_new_folder_title">مجلد جديد</string>
+    <string name="error_dialog_new_folder">تعذر إنشاء مجلد جديد</string>
+    <string name="error_open_dir">تعذر فتح المجلد</string>
+    <string name="home_directory">الرئيسية</string>
+    <!-- name (size) -->
+    <string name="permission_denied">الإذن مرفوض</string>
+    <string name="save_file">حفظ الملف</string>
+    <string name="file_name">‮اسم الملف</string>
+    <string name="error_file_exists">الملف موجود مسبقاً، هل تريد استبداله؟</string>
+    <string name="file_name_is_empty">لا يمكن ترك حقل الاسم الكامل فارغا</string>
+    <string name="system_manager">إدارة النظام</string>
+    <string name="device_does_not_support_this_feature">الجهاز الخاص بك لا يدعم هذه الميزة</string>
+    <string name="system_file_manager_not_found">لم يتم العثور على مدير ملفات النظام</string>
+    <string name="replace_file">استبدال ملف</string>
+    <!-- Details download dialog -->
+    <string name="detail_downloaded">الملفات المحملة</string>
+    <!-- downloaded/total (percent) -->
+    <string name="detail_downloaded_format">%1$s/%2$s (%3$d%%)</string>
+    <string name="detail_pieces">القطع</string>
+    <string name="detail_date_added">تاريخ الإضافة</string>
+    <string name="detail_user_agent">وكيل المستخدم</string>
+    <string name="detail_md5_hash_sum">MD5</string>
+    <string name="detail_sha256_hash_sum">SHA-256</string>
+    <string name="calculate">احسب</string>
+    <!-- Error report -->
+    <string name="app_error_occurred">حدث خطأ في التطبيق. يمكنك إرسال التقرير إلى المطور</string>
+    <string name="error_comment_prompt">يمكنك إضافة معلومات إضافية وتعليقات هنا:</string>
+    <!-- Send text to clipboard -->
+    <string name="send_text_to_clipboard">نسخ</string>
+    <string name="text_copied_to_clipboard">تم نسخ النص إلى الحافظة</string>
+    <!-- Browser -->
+    <string name="browser">المتصفح</string>
+    <string name="browser_app">متصفح Navi</string>
+    <string name="webview_is_required">يتطلب تطبيق WebView لتعمل الميزة بالشكل المطلوب</string>
+    <string name="browser_forward_arrow">إلى الأمام</string>
+    <string name="browser_desktop_version">إصدار سطح المكتب</string>
+    <string name="browser_address_bar_hint">أدخل عنوانًا أو ابحث</string>
+    <string name="browser_back_pressed">اضغط على الزر مرة أخرى للخروج</string>
+    <string name="browser_secure_connection">اتصال آمن</string>
+    <string name="browser_download_from_link">تنزيل</string>
+    <string name="browser_copy_link">نسخ الرابط</string>
+    <!-- Browser bookmarks -->
+    <string name="browser_bookmarks">الإشارات المرجعيّة</string>
+    <string name="bookmarks_list_empty">لا توجد إشارات مرجعية</string>
+    <string name="browser_add_bookmark">إضافة إشارة مرجعية</string>
+    <string name="browser_edit_bookmark">تعديل الإشارة المرجعية</string>
+    <!-- Edit bookmark dialog -->
+    <string name="browser_bookmark_name">الاسم</string>
+    <string name="browser_bookmark_url">عنوان URL</string>
+    <string name="browser_bookmark_error_empty_url">الرجاء إدخال عنوان الرابط</string>
+    <string name="browser_bookmark_error_empty_name">الرجاء إدخال الأسم</string>
+    <plurals name="browser_bookmark_deleted">
+        <item quantity="zero">لم يتم حذف أي إشارة مرجعية</item>
+        <item quantity="one">تم حذف إشارة المرجعية واحدة</item>
+        <item quantity="two">تم حذف إشاراتان مرجعية</item>
+        <item quantity="few">تم حذف الإشارات المرجعية</item>
+        <item quantity="many">تم حذف العديد من الإشارات الرجعية</item>
+        <item quantity="other">تم حذف الإشارة المرجعية</item>
+    </plurals>
+    <plurals name="browser_bookmark_delete_failed">
+        <item quantity="zero">فشل في حذف الإشارات المرجعية</item>
+        <item quantity="one">فشل في حذف إشارة مرجعية واحدة</item>
+        <item quantity="two">فشل في حذف الإشارات المرجعية</item>
+        <item quantity="few">فشل في حذف الإشارات المرجعية</item>
+        <item quantity="many">فشل في حذف الإشارات المرجعية</item>
+        <item quantity="other">فشل في حذف الإشارات المرجعية</item>
+    </plurals>
+    <string name="browser_bookmark_change_failed">فشل في تغيير الإشارة المرجعية</string>
+    <string name="browser_bookmark_added">تمت إضافة إشارة مرجعية</string>
+    <string name="browser_bookmark_add_failed">فشل في إضافة إشارة مرجعية</string>
+    <string name="browser_bookmark_edit_menu">تحرير</string>
+    <!-- Settings -->
+    <!-- Headers -->
+    <string name="pref_header_appearance">المظهر</string>
+    <string name="pref_header_behavior">السلوك</string>
+    <string name="pref_header_limitations">القيود</string>
+    <string name="pref_header_storage">التخزين</string>
+    <string name="pref_header_browser">المتصفح</string>
+    <!-- Appearance settings -->
+    <string name="pref_theme_category">إعدادات الثيم</string>
+    <string name="pref_theme_title">الثيم</string>
+    <!-- pref_theme_entries -->
+    <string name="pref_theme_entries_0">فاتح</string>
+    <string name="pref_theme_entries_1">داكن</string>
+    <string name="pref_theme_entries_2">أسود</string>
+    <string name="pref_notification_category">إعدادات النتبيهات</string>
+    <string name="pref_progress_notify_title">تنبيهات التقدم</string>
+    <string name="pref_finish_notify_title">تنبيه الإنتهاء</string>
+    <string name="pref_pending_notify_title">تنبيه التعليق</string>
+    <string name="pref_play_sound_notify_title">تشغيل الصوت</string>
+    <string name="pref_notify_sound_title">صوت التنبيهات</string>
+    <string name="pref_led_indicator_notify_title">مؤشر LED</string>
+    <string name="pref_led_indicator_color_notify_title">لون مؤشر LED</string>
+    <string name="pref_vibration_notify_title">الاهتزاز</string>
+    <string name="theme_settings_apply_after_reboot">سيتم تطبيق إعدادات السمة بعد إعادة تشغيل التطبيق</string>
+    <!-- Behavior settings -->
+    <string name="pref_autostart_title">التشغيل التلقائي</string>
+    <string name="pref_autostart_summary">تشغيل التطبيق بعد بدء تشغيل الجهاز وابدأ التحميل ، أذا لم يتم أيقافه مؤقتاً</string>
+    <!-- A synonym for word "unmetered" - unlimited-->
+    <string name="pref_umnetered_connections_only_title">الاتصالات الثابتة فقط</string>
+    <string name="pref_umnetered_connections_only_summary">تحميل فقط عبر اتصالات محددة (على سبيل المثال، وأي فأي أو إيثرنت)</string>
+    <string name="pref_power_management_category">إدارة الطاقة</string>
+    <string name="pref_cpu_do_not_sleep_title">إبقاء الهاتف يقظاً</string>
+    <string name="pref_cpu_do_not_sleep_summary">تمكين هذا الخيار سيزيد استخدام البطارية. استخدم هذا الخيار إذا انخفضت سرعة التحميل عند إيقاف تشغيل الشاشة</string>
+    <string name="pref_download_only_when_charging_title">تحميل فقط عند الشحن</string>
+    <string name="pref_download_only_when_charging_summary">عند تفعيله سيتم التحميل فقط عند الشحن. جميع التحميلات سيتم أيقافها في حال عدم توصيل الجهاز بالشاحن</string>
+    <string name="pref_battery_control_title">وحدة تحكم البطارية</string>
+    <string name="pref_custom_battery_control_title">إظهار نسبة البطارية</string>
+    <string name="pref_custom_battery_control_value_title">مراقبة النسبة المئوية للبطارية</string>
+    <string name="pref_battery_control_summary">سوف يتم ايقاف كافة التحميلات إذا كان مستوى شحن البطارية أقل من %1$d%%. لا يتم تطبيق هذا الخيار عند شحن الهاتف</string>
+    <string name="pref_custom_battery_control_summary">تعيين نسبة مئوية مخصصة لإيقاف التنزيلات عند وصول نسبة البطارية اليها. تمكين هذا الخيار سوف يتجاهل النسبة الافتراضية %1$d%%</string>
+    <string name="pref_custom_battery_control_dialog_summary">تعيين نسبة مئوية مخصصة للتطبيق لمراقبة التحميل سيكون له أثر سلبي على عمر البطارية عند التحميل. هل أنت متأكد من أنك تريد تمكين هذا؟</string>
+    <string name="pref_enable_roaming_title">تفعيل التجوال</string>
+    <string name="pref_enable_roaming_summary">تحميل فقط إذا لم يكن الجهاز في وضع التجوال</string>
+    <string name="pref_replace_duplicate_downloads_title">استبدال التحميلات المتكررة</string>
+    <string name="pref_replace_duplicate_downloads_summary">استبدال التحميلات المكررة (التي تحتوي علئ نفس رابط التحميل) و موجودة مسبقاً في قائمة التنزيلات</string>
+    <string name="pref_auto_connect_title">اللإتصال التلقائي</string>
+    <string name="pref_auto_connect_summary">الاتصال التلقائي عند فتح نافذة الإضافة</string>
+    <string name="pref_timeout_title">انتهت المهلة</string>
+    <string name="pref_timeout_summary">وقت الانتظار بالملي ثانية قبل انتهاء مهلة الاتصال. يتم تفسير الصفر كمهلة لانهائية</string>
+    <!-- Limitation settings -->
+    <string name="pref_max_active_downloads_title">الحد الأقصى من التحميلات النشطة</string>
+    <string name="pref_max_download_retries_title">الحد الأقصى لعدد المحاولات</string>
+    <string name="pref_max_download_retries_dialog_msg">0-بدون اي محاولات</string>
+    <string name="pref_speed_limit_title">حد السرعة للجزء الواحد</string>
+    <string name="pref_speed_limit_dialog_hint">تعيين السرعة في KiB/s (0 - بدون حدود)</string>
+    <!-- Storage settings -->
+    <string name="pref_save_downloads_in_title">حفظ التنزيلات في</string>
+    <string name="pref_move_after_download_title">نقل بعد التحميل</string>
+    <string name="pref_move_after_download_in_title">نقل بعد التحميل الى</string>
+    <string name="pref_delete_file_if_error_title">حذف الملفات في حالة حدوث خطأ</string>
+    <string name="pref_preallocate_disk_space_title">تخصيص مسبق للملف من مساحة القرص</string>
+    <string name="pref_preallocate_disk_space_summary">متاح لإصدارات أندرويد 5.0 وما فوق</string>
+    <!-- Browser settings -->
+    <string name="pref_browser_bottom_address_bar_title">شريط العنوان في الأسفل</string>
+    <string name="pref_browser_bottom_address_bar_summary">سيتم وضع شريط العنوان في الجزء السفلي من الشاشة</string>
+    <string name="pref_browser_start_page_title">صفحة البداية</string>
+    <string name="pref_browser_allow_java_script_title">السماح بجافا بسكريبت</string>
+    <string name="pref_browser_allow_popup_windows_title">السماح بالنوافذ المنبثقة</string>
+    <string name="pref_browser_cache_category">التخزين مؤقت</string>
+    <string name="pref_browser_cookies_category">ملفات تعريف الارتباط</string>
+    <string name="pref_browser_enable_caching_title">تمكين التخزين المؤقت</string>
+    <string name="pref_browser_enable_cookies_title">تمكين ملفات تعريف الارتباط</string>
+    <string name="pref_browser_delete_cookies_title">حذف ملفات تعريف الارتباط</string>
+    <string name="pref_browser_delete_cookies_done">حذف جميع ملفات تعريف الارتباط</string>
+    <string name="pref_browser_clear_cache_title">مسح ذاكرة التخزين المؤقت</string>
+    <string name="pref_browser_clear_cache_done">تم مسح ذاكرة التخزين المؤقت</string>
+    <string name="pref_browser_do_not_track_title">لا تقم بتتبعي</string>
+    <string name="pref_browser_do_not_track_summary">إرسال طلب \"لا تتبع\" إلى مواقع الويب التي تزورها</string>
+    <string name="pref_browser_launcher_icon_title">إظهار أيقونة المتصفح في قائمة البرامج</string>
+    <string name="pref_browser_disable_from_system_title">تعطيل المتصفح من النظام</string>
+    <string name="pref_browser_disable_from_system_summary">المتصفح لن يكون متاحا لفتح الروابط</string>
+    <string name="pref_browser_search_engine_title">محرك البحث</string>
+    <string name="pref_browser_hide_menu_icon_title">إخفاء التطبيق من درج التطبيقات</string>
+    <string name="pref_browser_hide_menu_icon_summary">إخفاء أيقونة المتصفح من قائمة الشاشة الرئيسية</string>
+    <!-- About dialog -->
+    <string name="about_title">حول Download Navi</string>
+    <string name="about_description"><![CDATA[    <br><br>لمزيد من المعلومات و للمساعدة في المشروع: <a href="https://github.com/TachibanaGeneralLaboratories/download-navi">https://github.com/TachibanaGeneralLaboratories/download-navi</a>
+    مدير التحميلات Download Navi حر ومفتوح المصدر للأندرويد 4.4 +<br><br>
+    تطبيق Download Navi هو برمجية حرة ، تم أطلاقها بموجب شروط رخصة <a
+href="http://www.gnu.org/copyleft/gpl.html">
+جنو العمومية الإصدارv3 (GPLv3)</a><br><br>
+   <a href="https://github.com/TachibanaGeneralLaboratories/download-navi/blob/HEAD/PRIVACY.md">سياسة الخصوصية</a>]]></string>
+    <string name="about_changelog">سِجل التغييرات</string>
+</resources>

@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/et_bg2"
+    android:padding="5dp">
+
+    <ImageView
+        android:id="@+id/item_hot_iv"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:src="@mipmap/icon" />
+
+    <TextView
+        android:id="@+id/item_hot_tv_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ellipsize="end"
+        android:singleLine="true"
+        android:layout_marginLeft="2dp"
+        android:text="农夫三拳"
+        android:textColor="@color/black"
+        android:textSize="12sp"
+        android:layout_toRightOf="@id/item_hot_iv"
+        />
+
+
+    <TextView
+        android:id="@+id/item_hot_tv_des"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/item_hot_tv_title"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="5dp"
+        android:layout_marginLeft="5dp"
+        android:layout_toRightOf="@id/item_hot_iv"
+        android:ellipsize="end"
+        android:maxLines="3"
+        android:text="xxxxxxxxxxxxxxxxxxxxxxxxxxxxx"
+        android:textSize="8dp"
+        android:textColor="@color/nav_normal"
+        android:textStyle="normal" />
+
+    <TextView
+        android:id="@+id/item_hot_price"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/item_hot_tv_des"
+        android:layout_toRightOf="@+id/item_hot_iv"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="5dp"
+        android:text="￥1.00元"
+        android:textColor="@color/red"
+        android:textStyle="normal"
+
+        />
+
+</RelativeLayout>

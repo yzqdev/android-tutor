@@ -1,0 +1,314 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Global string -->
+    <string name="app_name">Download Navi</string>
+    <string name="foreground_notification">Ön plan bildirimi</string>
+    <string name="download_running">Devam ediyor</string>
+    <string name="finished">Tamamlandı</string>
+    <string name="shutdown">Kapat</string>
+    <!-- 1 d. 1 h. 1 m -->
+    <string name="elapsed_time_format_d_h_mm">%1$d g. %2$d sa. %3$d dk</string>
+    <!-- 1 h. 1 m. 1 s -->
+    <string name="elapsed_time_format_h_mm_ss">%1$d sa. %2$d dk. %3$d sn</string>
+    <!-- 1 m. 1 s -->
+    <string name="elapsed_time_format_mm_ss">%1$d dk. %2$d sn</string>
+    <!-- 1 s -->
+    <string name="elapsed_time_format_ss">%1$d sn</string>
+    <string name="ok">Tamam</string>
+    <string name="cancel">İptal</string>
+    <!-- A synonym for word "unmetered" - unlimited-->
+    <string name="unmetered_connections_only">Yalnızca kotasız bağlantılar</string>
+    <string name="connect">Bağlan</string>
+    <string name="add">Ekle</string>
+    <string name="not_available">Yok</string>
+    <string name="open_navigation_drawer">Gezinme çekmecesini aç</string>
+    <string name="close_navigation_drawer">Gezinme çekmecesini kapat</string>
+    <string name="error_template">Hata: %1$s</string>
+    <string name="pause">Duraklat</string>
+    <string name="resume">Devam et</string>
+    <string name="stop">Durdur</string>
+    <string name="stopped">Durduruldu</string>
+    <string name="pending">Bekliyor</string>
+    <string name="delete">Sil</string>
+    <string name="share">Paylaş</string>
+    <string name="menu">Menü</string>
+    <string name="select_all">Tümünü seç</string>
+    <string name="share_via">Şununla paylaş</string>
+    <string name="no">Hayır</string>
+    <string name="yes">Evet</string>
+    <string name="error">Hata</string>
+    <string name="file">Dosya</string>
+    <string name="folder">Klasör</string>
+    <string name="downloading_metadata">Üst veriler indiriliyor</string>
+    <string name="all">Tümü</string>
+    <string name="search">Ara</string>
+    <string name="settings">Ayarlar</string>
+    <string name="about">Hakkında</string>
+    <string name="close">Kapat</string>
+    <string name="redownload">Yeniden indir</string>
+    <string name="Default">Öntanımlı</string>
+    <string name="warning">Uyarı</string>
+    <string name="apply">Uygula</string>
+    <string name="report">Bildir</string>
+    <string name="more_details">Daha fazla ayrıntı</string>
+    <string name="clipboard">Pano</string>
+    <string name="verify">Doğrula</string>
+    <!-- Permission dialog -->
+    <string name="perm_denied_title">İzin reddedildi</string>
+    <string name="perm_denied_warning">Bu izin olmadan uygulama, bazı aygıtlarda ve Android sürümlerinde dosyaları belleğe kaydedemez. Uygulama düzgün çalışmayacak. Bu izni reddetmek istediğinizden emin misiniz\?</string>
+    <!-- Download progress notification -->
+    <string name="download_ticker_notify">%1$s İndiriliyor</string>
+    <!-- Foreground notification -->
+    <string name="app_running_in_the_background">Download Navi arka planda çalışıyor</string>
+    <string name="pause_all">Tümünü duraklat</string>
+    <string name="resume_all">Tümünü devam ettir</string>
+    <!-- Finish notification -->
+    <string name="download_finished_notify">İndirme tamamlandı</string>
+    <string name="open_using">Şununla aç</string>
+    <!-- Pending notification -->
+    <string name="download_in_queue_ticker_notify">sıradaki %1$s</string>
+    <string name="waiting_for_network">Bağlantı bekleniyor</string>
+    <string name="waiting_for_retry">Yeniden deneme bekleniyor</string>
+    <!-- Error notification -->
+    <string name="download_error_notify_title">İndirme hatası</string>
+    <!-- Applying params notification -->
+    <string name="applying_params_title">Parametreler uygulanıyor</string>
+    <string name="applying_params_for_downloads">İndirmeler için uygulanan parametreler</string>
+    <string name="applying_params_error_title">%1$s için params hatası uygulama</string>
+    <!-- Add download dialog -->
+    <string name="add_download">İndirme ekle</string>
+    <string name="download_link">Bağlantı</string>
+    <string name="download_name">Adı</string>
+    <string name="download_size">Boyut: %1$s</string>
+    <string name="download_retry">Yeniden Dene</string>
+    <string name="download_advanced">Gelişmiş</string>
+    <string name="download_user_agent">Kullanıcı aracısı</string>
+    <string name="download_error_empty_link">Lütfen bağlantı girin</string>
+    <string name="download_error_empty_name">Lütfen adı girin</string>
+    <string name="download_error_no_enough_free_space">Yeterli boş alan yok: %1$s boş, ancak dosya boyutu %2$s</string>
+    <string name="download_error_name_is_not_correct">Doğru ad \"%1$s\" dır</string>
+    <string name="fetch_error_default_fmt">Hata: %1$s</string>
+    <string name="fetch_error_invalid_url">Geçersiz URL: %1$s</string>
+    <string name="fetch_error_network_disconnected">ağ bağlantısı kesildi</string>
+    <string name="fetch_error_http_response">Hata: sunucu HTTP %1$d kodu döndürdü</string>
+    <string name="fetch_error_io">GÇ hatası: %1$s</string>
+    <string name="unable_to_open_folder">Seçilen klasör açılamıyor. Lütfen başka bir klasör seçmeyi deneyin</string>
+    <string name="unable_to_create_file">Dosya oluşturulamıyor. Lütfen başka bir klasör seçmeyi deneyin</string>
+    <string name="partial_download_not_supported">Bu indirme işlemi duraklatma ve parça indirme işlemini desteklemiyor</string>
+    <string name="download_pieces_number_title">Parça sayısı</string>
+    <string name="download_description">Açıklama</string>
+    <string name="select_folder_to_save">Kaydedilecek klasörü seçin</string>
+    <string name="path">Yol</string>
+    <string name="storage_free_space">Boş alan: %1$s</string>
+    <string name="add_download_error_invalid_url">İndirme eklenemedi: geçersiz URL</string>
+    <string name="checksum">Sağlama</string>
+    <string name="add_dialog_checksum_description">MD5, SHA-256</string>
+    <string name="referer_description">%1$s başlık</string>
+    <string name="error_invalid_checksum">Geçersiz sağlama toplamı</string>
+    <!-- Add user agent dialog -->
+    <string name="dialog_add_user_agent_title">Kullanıcı aracısı ekle</string>
+    <!-- Main activity -->
+    <string name="fragment_title_queued">Sıraya alındı</string>
+    <string name="fragment_title_completed">Tamamlandı</string>
+    <string name="download_list_empty">İndirme yok</string>
+    <string name="share_url">Adresi paylaş</string>
+    <!-- Navigation drawer -->
+    <!-- Category -->
+    <string name="drawer_category">Kategori</string>
+    <string name="drawer_category_others">Diğerleri</string>
+    <string name="drawer_category_documents">Belgeler</string>
+    <string name="drawer_category_images">Resimler</string>
+    <string name="drawer_category_video">Video</string>
+    <string name="drawer_category_apk">APK</string>
+    <string name="drawer_category_audio">Ses</string>
+    <string name="drawer_category_archives">Arşivler</string>
+    <!-- Status -->
+    <string name="drawer_status">Durum</string>
+    <string name="drawer_status_running">Çalışıyor</string>
+    <string name="drawer_status_stopped">Durduruldu</string>
+    <!-- Date added -->
+    <string name="drawer_date_added">Eklenme tarihi</string>
+    <string name="drawer_date_added_today">Bugün</string>
+    <string name="drawer_date_added_yesterday">Dün</string>
+    <string name="drawer_date_added_week">Hafta</string>
+    <string name="drawer_date_added_month">Ay</string>
+    <string name="drawer_date_added_year">Yıl</string>
+    <!-- Sorting -->
+    <string name="drawer_sorting">Sıralama</string>
+    <string name="drawer_sorting_date_added">Eklenme tarihi</string>
+    <string name="drawer_sorting_name">Adı</string>
+    <string name="drawer_sorting_size">Boyut</string>
+    <string name="drawer_sorting_category">Kategori</string>
+    <string name="drawer_sorting_no_sorting">Sıralama yok</string>
+    <!-- Download list item -->
+    <!-- downloaded/total • ETA • speed -->
+    <string name="download_queued_progress_template">%1$s/%2$s \u2022 %3$s \u2022 %4$s/sn</string>
+    <!-- downloaded/total • status -->
+    <string name="download_queued_template">%1$s/%2$s \u2022 %3$s</string>
+    <!-- hostname • total -->
+    <string name="download_finished_template">%1$s \u2022 %2$s</string>
+    <string name="download_details">Ayrıntılar</string>
+    <string name="deleting">Siliniyor</string>
+    <string name="delete_selected_download">Seçili indirme silinsin mi? Bu işlem geri alınamaz</string>
+    <string name="delete_selected_downloads">Seçili indirmeler silinsin mi? Bu işlem geri alınamaz</string>
+    <string name="delete_with_downloaded_file">İndirilen dosyayı da sil</string>
+    <string name="error_verify_checksum">Geçersiz dosya sağlama toplamı</string>
+    <!-- Filemanager dialog -->
+    <string name="dir_chooser_title">Klasör seç</string>
+    <string name="file_chooser_title">Dosya seç</string>
+    <string name="dialog_new_folder_title">Yeni klasör</string>
+    <string name="error_dialog_new_folder">Yeni klasör oluşturulamıyor</string>
+    <string name="error_open_dir">Klasör açılamadı</string>
+    <string name="home_directory">Ana sayfa</string>
+    <!-- name (size) -->
+    <string name="permission_denied">İzin reddedildi</string>
+    <string name="save_file">Dosyayı kaydet</string>
+    <string name="file_name">Dosya adı</string>
+    <string name="error_file_exists">Dosya zaten var. Değiştirilsin mi?</string>
+    <string name="file_name_is_empty">Dosya adı boş bırakılamaz</string>
+    <string name="system_manager">Sistem yöneticisi</string>
+    <string name="device_does_not_support_this_feature">Aygıtınız bu özelliği desteklemiyor</string>
+    <string name="system_file_manager_not_found">Sistem dosya yöneticisi bulunamadı</string>
+    <string name="replace_file">Dosyayı değiştir</string>
+    <!-- Details download dialog -->
+    <string name="detail_downloaded">İndirildi</string>
+    <!-- downloaded/total (percent) -->
+    <string name="detail_downloaded_format">%1$s/%2$s (%3$d%%)</string>
+    <string name="detail_pieces">Parçalar</string>
+    <string name="detail_date_added">Eklenme tarihi</string>
+    <string name="detail_user_agent">Kullanıcı aracısı</string>
+    <string name="detail_md5_hash_sum">MD5</string>
+    <string name="detail_sha256_hash_sum">SHA-256</string>
+    <string name="calculate">Hesapla</string>
+    <!-- Error report -->
+    <string name="app_error_occurred">Uygulama hatası oluştu. Raporu geliştiricilere gönderebilirsiniz</string>
+    <string name="error_comment_prompt">Buraya ek bilgi ve yorumlar ekleyebilirsiniz:</string>
+    <!-- Send text to clipboard -->
+    <string name="send_text_to_clipboard">Kopyala</string>
+    <string name="text_copied_to_clipboard">Metin panoya kopyalandı</string>
+    <!-- Browser -->
+    <string name="browser">Tarayıcı</string>
+    <string name="browser_app">Navi Tarayıcı</string>
+    <string name="webview_is_required">Çalışması için WebView gerekir</string>
+    <string name="browser_forward_arrow">İlet</string>
+    <string name="browser_desktop_version">Masaüstü sürümü</string>
+    <string name="browser_address_bar_hint">Adres veya sorgu girin</string>
+    <string name="browser_back_pressed">Kapatmak için tekrar basın</string>
+    <string name="browser_secure_connection">Güvenli bağlantı</string>
+    <string name="browser_download_from_link">İndir</string>
+    <string name="browser_copy_link">Bağlantıyı kopyala</string>
+    <!-- Browser bookmarks -->
+    <string name="browser_bookmarks">Yer imleri</string>
+    <string name="bookmarks_list_empty">Yer imi yok</string>
+    <string name="browser_add_bookmark">Yer imi ekle</string>
+    <string name="browser_edit_bookmark">Yer imini düzenle</string>
+    <!-- Edit bookmark dialog -->
+    <string name="browser_bookmark_name">Ad</string>
+    <string name="browser_bookmark_url">Bağlantı</string>
+    <string name="browser_bookmark_error_empty_url">Lütfen adres girin</string>
+    <string name="browser_bookmark_error_empty_name">Lütfen adı girin</string>
+    <plurals name="browser_bookmark_deleted">
+        <item quantity="one">Yer imi silindi</item>
+        <item quantity="other">Yer imleri silindi</item>
+    </plurals>
+    <plurals name="browser_bookmark_delete_failed">
+        <item quantity="one">Yer imi silinemedi</item>
+        <item quantity="other">Yer imleri silinemedi</item>
+    </plurals>
+    <string name="browser_bookmark_change_failed">Yer imi değiştirilemedi</string>
+    <string name="browser_bookmark_added">Yer imi eklendi</string>
+    <string name="browser_bookmark_add_failed">Yer imi eklenemedi</string>
+    <string name="browser_bookmark_edit_menu">Düzenle</string>
+    <!-- Settings -->
+    <!-- Headers -->
+    <string name="pref_header_appearance">Görünüm</string>
+    <string name="pref_header_behavior">Davranış</string>
+    <string name="pref_header_storage">Depolama</string>
+    <string name="pref_header_browser">Tarayıcı</string>
+    <!-- Appearance settings -->
+    <string name="pref_theme_category">Tema ayarları</string>
+    <string name="pref_theme_title">Tema</string>
+    <!-- pref_theme_entries -->
+    <string name="pref_theme_entries_0">Açık</string>
+    <string name="pref_theme_entries_1">Koyu</string>
+    <string name="pref_theme_entries_2">Siyah</string>
+    <string name="pref_notification_category">Bildirim ayarları</string>
+    <string name="pref_progress_notify_title">İlerleme bildirimi</string>
+    <string name="pref_finish_notify_title">Tamamlandı bildirimi</string>
+    <string name="pref_pending_notify_title">Beklemede bildirimi</string>
+    <string name="pref_play_sound_notify_title">Ses çal</string>
+    <string name="pref_notify_sound_title">Bildirim sesi</string>
+    <string name="pref_led_indicator_notify_title">LED göstergesi</string>
+    <string name="pref_led_indicator_color_notify_title">LED gösterge rengi</string>
+    <string name="pref_vibration_notify_title">Titreşim</string>
+    <string name="theme_settings_apply_after_reboot">Tema ayarları, uygulama yeniden başlatıldıktan sonra uygulanacak</string>
+    <!-- Behavior settings -->
+    <string name="pref_autostart_title">Otomatik başlatma</string>
+    <string name="pref_autostart_summary">Aygıt açıldıktan sonra uygulamayı çalıştır ve duraklatılmadıysa indirmeye başla</string>
+    <!-- A synonym for word "unmetered" - unlimited-->
+    <string name="pref_umnetered_connections_only_title">Yalnızca kotasız bağlantılar</string>
+    <string name="pref_umnetered_connections_only_summary">Yalnızca kotasız bağlantılarda indir (örneğin, WiFi veya Ethernet)</string>
+    <string name="pref_power_management_category">Güç yönetimi</string>
+    <string name="pref_cpu_do_not_sleep_title"> CPU\'yu uyanık tut</string>
+    <string name="pref_cpu_do_not_sleep_summary">Bunu etkinleştirmek pil kullanımını artıracaktır. Ekran kapandığında indirme hızı düşerse, bu seçeneği kullan</string>
+    <string name="pref_download_only_when_charging_title">Sadece şarj olurken indir</string>
+    <string name="pref_download_only_when_charging_summary">Etkinleştirilirse, indirme işlemi yalnızca şarj sırasında gerçekleşir. Şarja bağlı değilken tüm indirmeler duraklatılır</string>
+    <string name="pref_battery_control_title">Pil denetimi</string>
+    <string name="pref_custom_battery_control_title">Özel pil yüzdesi</string>
+    <string name="pref_custom_battery_control_value_title">Pil denetimi yüzdesi</string>
+    <string name="pref_battery_control_summary">Pil seviyesi %%%1$d altına düşerse, tüm indirmeler duraklatılır. Sınır, şarj sırasında geçerli değildir</string>
+    <string name="pref_custom_battery_control_summary">Pil seviyesi belirli bir eşiğin altındaysa, indirmeyi duraklatmak için özel bir yüzde belirleyin. Bu seçeneğin etkinleştirilmesi, öntanımlı %%%1$d eşiğini yok sayar</string>
+    <string name="pref_custom_battery_control_dialog_summary">İndirme işlemi sırasında uygulama için özel bir pil yüzdesi ayarlamak, pil ömrünü olumsuz yönde etkiler. Etkinleştirmek istediğinize emin misiniz\?</string>
+    <string name="pref_enable_roaming_title">Dolaşımı etkinleştir</string>
+    <string name="pref_enable_roaming_summary">Yalnızca aygıt dolaşımda değilse indir</string>
+    <string name="pref_max_active_downloads_title">En fazla etkin indirme sayısı</string>
+    <string name="pref_max_download_retries_title">En fazla indirme deneme sayısı</string>
+    <string name="pref_max_download_retries_dialog_msg">0 - bir daha deneme</string>
+    <string name="pref_replace_duplicate_downloads_title">Yinelenen indirmeleri değiştir</string>
+    <string name="pref_replace_duplicate_downloads_summary">Zaten listede olan yinelenen indirmeleri eklendiğinde (aynı URL ile) değiştir</string>
+    <string name="pref_auto_connect_title">Otomatik bağlantı</string>
+    <string name="pref_auto_connect_summary">Ekleme iletişim kutusunu açarken otomatik bağlan</string>
+    <string name="pref_timeout_title">Zaman aşımı</string>
+    <string name="pref_timeout_summary">Bağlantı zaman aşımına uğramadan önce beklenecek milisaniye cinsinden süre. Sıfır sonsuz bir zaman aşımı olarak yorumlanır</string>
+    <!-- Storage settings -->
+    <string name="pref_save_downloads_in_title">İndirilenleri kaydet</string>
+    <string name="pref_move_after_download_title">İndirdikten sonra taşı</string>
+    <string name="pref_move_after_download_in_title">İndirme işleminden sonra taşı</string>
+    <string name="pref_delete_file_if_error_title">Bir hata oluşursa dosyayı sil</string>
+    <string name="pref_preallocate_disk_space_title">Dosya için önceden ayrılmış disk alanı</string>
+    <string name="pref_preallocate_disk_space_summary">Android 5.0 Lollipop ve üzeri için kullanılabilir</string>
+    <!-- Browser settings -->
+    <string name="pref_browser_bottom_address_bar_title">Alttaki adres çubuğu</string>
+    <string name="pref_browser_bottom_address_bar_summary">Adres çubuğu ekranın altında yer alır</string>
+    <string name="pref_browser_start_page_title">Başlangıç sayfası</string>
+    <string name="pref_browser_allow_java_script_title">JavaScript\'e izin ver</string>
+    <string name="pref_browser_allow_popup_windows_title">Açılır pencerelere izin ver</string>
+    <string name="pref_browser_cache_category">Önbellek</string>
+    <string name="pref_browser_cookies_category">Çerezler</string>
+    <string name="pref_browser_enable_caching_title">Önbelleğe almayı etkinleştir</string>
+    <string name="pref_browser_enable_cookies_title">Çerezleri etkinleştir</string>
+    <string name="pref_browser_delete_cookies_title">Çerezleri temizle</string>
+    <string name="pref_browser_delete_cookies_done">Tüm çerezler temizlendi</string>
+    <string name="pref_browser_clear_cache_title">Önbelleği temizle</string>
+    <string name="pref_browser_clear_cache_done">Önbellek temizlendi</string>
+    <string name="pref_browser_do_not_track_title">Beni İzleme</string>
+    <string name="pref_browser_do_not_track_summary">Ziyaret ettiğiniz web sitelerine \"Beni İzleme\" isteği gönderin</string>
+    <string name="pref_browser_launcher_icon_title">Başlatıcıdaki tarayıcı simgesi</string>
+    <string name="pref_browser_disable_from_system_title">Tarayıcıyı sistemden devre dışı bırakın</string>
+    <string name="pref_browser_disable_from_system_summary">Tarayıcı bağlantıları açmak için kullanılamayacak</string>
+    <string name="pref_browser_search_engine_title">Arama motoru</string>
+    <!-- About dialog -->
+    <string name="about_title">Download Navi Hakkında</string>
+    <string name="about_description">Daha fazla bilgi ve projeye yardımcı olmak için: &lt;a href=https://github.com/TachibanaGeneralLaboratories/download-navi&gt;https://github.com/TachibanaGeneralLaboratories/download-navi&lt;/a&gt;&lt;br&gt;&lt;br&gt; Download Navi, Android 4.4+ için Özgür ve Açık Kaynaklı bir indirme yöneticisidir&lt;br&gt;&lt;br&gt; Download Navi, &lt;a href=http://www.gnu.org/copyleft/gpl.html&gt;GNU Genel Kamu Lisansının 3. sürümü (GPLv3)&lt;/a&gt; şartları altında yayınlanan özgür bir yazılımdır&lt;br&gt;&lt;br&gt; &lt;a href=https://github.com/TachibanaGeneralLaboratories/download-navi/blob/HEAD/PRIVACY.md&gt;Gizlilik Politikası&lt;/a&gt;</string>
+    <string name="about_changelog">Değişiklik günlüğü</string>
+    <string name="pref_browser_hide_menu_icon_summary">Ana ekran menüsünden tarayıcı simgesini gizleyin</string>
+    <string name="pref_browser_hide_menu_icon_title">Simgeyi menüden gizle</string>
+    <string name="pref_speed_limit_dialog_hint">KiB/s olarak hızı ayarlayın (0 - sınırsız)</string>
+    <string name="pref_speed_limit_title">Tek parça için hız sınırı</string>
+    <string name="pref_header_limitations">Sınırlamalar</string>
+    <plurals name="unable_sharing">
+        <item quantity="one">Dosya paylaşılamıyor.</item>
+        <item quantity="other">Dosyalar paylaşılamıyor.</item>
+    </plurals>
+    <string name="file_not_available">dosya kullanılamıyor!</string>
+</resources>

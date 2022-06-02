@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/et_bg"
+    android:orientation="vertical">
+
+    <ImageView
+        android:id="@+id/addcar_close_iv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/close_iv"
+        android:layout_alignParentRight="true"
+        android:paddingRight="5dp"
+        android:paddingTop="5dp"/>
+
+    <TextView
+        android:id="@+id/addcar_tv1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        android:layout_below="@+id/addcar_close_iv"
+        android:text="请选择商品数量："
+        android:textColor="@color/nav_normal"
+        />
+
+    <LinearLayout
+        android:id="@+id/addcar_l1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/addcar_tv1"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="5dp"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <com.example.nbshoping.utils.AmountView
+            android:id="@+id/addcar_buynum_amount"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            app:btnWidth="50dp"
+            app:tvWidth="70dp"
+            app:btnTextSize="30sp"/>
+
+
+<!--        <ImageView-->
+<!--            android:id="@+id/addcar_remove_iv"-->
+<!--            android:layout_width="0dp"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_gravity="center"-->
+<!--            android:layout_weight="1"-->
+<!--            android:src="@drawable/remove_iv" />-->
+
+<!--        <EditText-->
+<!--            android:id="@+id/addcar_num_et"-->
+<!--            android:layout_width="0dp"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_weight="1"-->
+<!--            android:background="@drawable/et_bg1"-->
+<!--            android:gravity="center"-->
+<!--            android:inputType="number"-->
+<!--            android:text="1"-->
+<!--            android:textColor="@color/black"-->
+<!--            android:textSize="20sp"/>-->
+
+<!--        <ImageView-->
+<!--            android:id="@+id/addcar_add_iv"-->
+<!--            android:layout_width="0dp"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_gravity="center"-->
+<!--            android:layout_weight="1"-->
+<!--            android:src="@drawable/add_iv" />-->
+
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/bottom_layout"
+        android:layout_below="@+id/addcar_l1"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:layout_marginTop="80dp"
+        >
+
+<!--        <LinearLayout-->
+<!--            android:id="@+id/addcar_totalinfo_layout"-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="match_parent"-->
+<!--            android:layout_marginLeft="20dp"-->
+<!--            android:gravity="center"-->
+<!--            android:orientation="vertical">-->
+
+<!--            <TextView-->
+<!--                android:id="@+id/addcar_count_tv"-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_gravity="fill_horizontal"-->
+<!--                android:text="已选0件"-->
+<!--                android:textColor="@color/darkgray"-->
+<!--                android:textSize="11dp" />-->
+
+<!--            <LinearLayout-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_marginTop="5dp"-->
+<!--                android:orientation="horizontal">-->
+
+<!--                <TextView-->
+<!--                    android:layout_width="wrap_content"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:layout_gravity="bottom"-->
+<!--                    android:text="商品金额:"-->
+
+<!--                    android:textColor="@color/black"-->
+<!--                    android:textSize="12dp" />-->
+
+<!--                <TextView-->
+<!--                    android:id="@+id/addcar_money_tv"-->
+<!--                    android:layout_width="wrap_content"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:layout_gravity="center_horizontal"-->
+<!--                    android:text="￥0"-->
+<!--                    android:textColor="@color/red"-->
+<!--                    android:textSize="16dp" />-->
+<!--            </LinearLayout>-->
+
+
+<!--        </LinearLayout>-->
+
+        <Button
+            android:id="@+id/addcar_ensure"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_centerInParent="true"
+            android:background="@drawable/et_bg5"
+            android:paddingLeft="80dp"
+            android:paddingRight="80dp"
+            android:text="确定"
+            android:textColor="@color/white"
+            android:textSize="18dp"
+            android:textStyle="" />
+
+    </RelativeLayout>
+
+</RelativeLayout>

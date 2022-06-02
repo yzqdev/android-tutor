@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="UpdateDialogStyle" parent="@android:style/Theme.DeviceDefault.Light.Dialog.NoActionBar.MinWidth">
+        <!--该行代码就是设置AlertDialog的背景-->
+        <item name="android:background">@android:color/white</item>
+    </style>
+<!--    Radiobutton 样式-->
+    <style name="MyRadioButton" parent="Theme.AppCompat.Light">
+        <item name="colorControlNormal">@color/nav_normal</item>
+        <item name="colorControlActivated">@color/darkorange</item>
+    </style>
+
+<!--    tablayout-->
+    <style name="TabLayoutTextUnSelected">
+        <item name="android:textColor">@color/black</item>
+    </style>
+    <style name="TabLayoutTextSelected">
+        <item name="android:textColor">@color/darkorange</item>
+    </style>
+
+
+</resources>

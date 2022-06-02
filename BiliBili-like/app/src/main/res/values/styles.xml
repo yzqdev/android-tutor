@@ -1,0 +1,140 @@
+<resources >
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.MaterialComponents.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+
+    <style name="MainTheme" parent="Theme.MaterialComponents.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <!-- 设置activity切换动画 -->
+        <item name="android:windowAnimationStyle">@style/activityAnimation</item>
+        <!--<item name="android:alertDialogTheme">@android:style/Theme.Holo.Light.Dialog</item>-->
+    </style>
+
+
+    <style name="activityAnimation" parent="@android:style/Animation">
+        <item name="android:activityOpenEnterAnimation">@anim/right_in</item>
+        <item name="android:activityOpenExitAnimation">@anim/left_out</item>
+        <item name="android:activityCloseEnterAnimation">@anim/left_in</item>
+        <item name="android:activityCloseExitAnimation">@anim/right_out</item>
+    </style>
+
+    <!--全屏activity-->
+    <style name="FullScreen" parent="Theme.MaterialComponents.Light.NoActionBar">
+        <item name="android:windowFullscreen">true</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowActionBar">false</item>
+    </style>
+    <!--去掉dialogfragment的背景阴影-->
+    <style name="fragmentDialog" parent="@android:style/Theme.Dialog">
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:windowTitleStyle">@null</item>
+        <item name="android:colorBackgroundCacheHint">@null</item>
+        <item name="android:windowAnimationStyle">@android:style/Animation.Dialog</item>
+        <item name="android:windowSoftInputMode">stateUnspecified|adjustPan</item>
+        <item name="android:backgroundDimEnabled">false</item><!-- dim:模糊的 阴影效果 -->
+    </style>
+
+    <!--card style-->
+    <style name="cardStyle">
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_marginTop">5dp</item>
+        <item name="android:layout_marginBottom">5dp</item>
+        <item name="android:layout_margin">3dp</item>
+        <item name="android:foreground">?android:attr/selectableItemBackground</item>
+    </style>
+
+
+    <style name="TextTitle">
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:textSize">@dimen/user_name_text_size</item>
+        <item name="android:textColor">@color/black_alpha_176</item>
+    </style>
+    <style name="TextMessage">
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:textSize">@dimen/fen_si_text_size</item>
+        <item name="android:textColor">@color/black_alpha_112</item>
+    </style>
+
+
+
+    <style name="image_small">
+        <item name="android:layout_height">20dp</item>
+        <item name="android:layout_width">20dp</item>
+    </style>
+
+    <style name="image_normal">
+        <item name="android:layout_height">30dp</item>
+        <item name="android:layout_width">30dp</item>
+    </style>
+
+    <style name="image_large">
+        <item name="android:layout_height">60dp</item>
+        <item name="android:layout_width">60dp</item>
+    </style>
+
+    <style name="image_live_top">
+        <item name="android:layout_height">50dp</item>
+        <item name="android:layout_width">50dp</item>
+    </style>
+
+    <style name="image_live_top1">
+        <item name="android:layout_height">60dp</item>
+        <item name="android:layout_width">60dp</item>
+    </style>
+
+    <!--分割线-->
+    <style name="between_line">
+        <item name="android:layout_height">0.4dp</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:background">@color/black_alpha_32</item>
+    </style>
+
+    <!--popwindow anim-->
+    <style name="contextMenuAnim" parent="@android:style/Animation.Activity">
+        <item name="android:windowEnterAnimation">@anim/pop_show</item>
+        <item name="android:windowExitAnimation">@anim/pop_hide</item>
+    </style>
+
+    <style name="pop_watch_later_Anim" parent="@android:style/Animation.Activity">
+        <item name="android:windowEnterAnimation">@anim/pop_watch_later_show</item>
+        <item name="android:windowExitAnimation">@anim/pop_watch_later_hide</item>
+    </style>
+
+
+    <style name="pop_player_support_quility" parent="@android:style/Animation.Activity">
+        <item name="android:windowEnterAnimation">@anim/pop_right_show</item>
+        <item name="android:windowExitAnimation">@anim/pop_left_hide</item>
+    </style>
+
+    <style name="text_style_normal">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textSize">@dimen/text_size_normal</item>
+        <item name="android:textColor">@color/black</item>
+    </style>
+
+    <style name="text_style_navigation" parent="text_style_normal">
+        <item name="android:layout_weight">1</item>
+        <item name="android:gravity">center_horizontal</item>
+        <item name="android:padding">8dp</item>
+    </style>
+
+    <style name="SearchView" parent="Widget.AppCompat.SearchView">
+        <item name="android:tint">@color/black_alpha_112</item>
+        <item name="closeIcon">@drawable/ic_search_close</item>
+        <!--<item name="searchIcon">@drawable/ic_search_api_material_dark</item>-->
+    </style>
+</resources>

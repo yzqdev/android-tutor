@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".login.LoginFragment"
+    android:padding="20dp">
+
+    <TextView
+        android:id="@+id/frag_login_tv1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="电话号码："
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:textColor="@color/nav_normal"
+        android:layout_marginTop="20dp"/>
+    <!--  可输入文本框  -->
+    <EditText
+        android:id="@+id/frag_login_te_tel1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/frag_login_tv1"
+        android:background="@drawable/et_bg"
+        android:layout_alignBaseline="@+id/frag_login_tv1"
+        android:textSize="16dp"
+        android:textColor="@color/nav_normal"
+        android:layout_marginLeft="10dp"
+        android:inputType="phone"
+        android:maxLength="11"
+        />
+    <TextView
+        android:id="@+id/frag_login_tv2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="密        码："
+        android:layout_below="@+id/frag_login_tv1"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:textColor="@color/nav_normal"
+        android:layout_marginTop="40dp"/>
+    <EditText
+        android:id="@+id/frag_login_te_pwd"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/frag_login_tv2"
+        android:background="@drawable/et_bg"
+        android:layout_alignBaseline="@+id/frag_login_tv2"
+        android:textSize="16dp"
+        android:textColor="@color/nav_normal"
+        android:layout_marginLeft="10dp"
+        android:inputType="textPassword"
+        android:maxLength="18" />
+    <TextView
+        android:id="@+id/frag_login_tv_updatepwd"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:layout_below="@+id/frag_login_tv2"
+        android:textSize="12sp"
+        android:layout_alignParentRight="true"
+        android:textColor="@color/nav_normal"
+        android:layout_marginTop="10dp"/>
+
+    <Button
+        android:id="@+id/frag_login_btn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/frag_login_tv_updatepwd"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/btn_bg"
+        android:text="确定"
+        android:textColor="@color/nav_fouces"
+        android:textSize="18sp"
+        android:textStyle="bold"/>
+
+</RelativeLayout>

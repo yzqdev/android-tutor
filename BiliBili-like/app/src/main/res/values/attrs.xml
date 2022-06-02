@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="FoldableLayout">
+        <attr name="maxCollapsedLines" format="integer"/>
+        <attr name="animDuration" format="integer"/>
+        <attr name="animAlphaStart" format="float"/>
+
+        <attr name="expandToggleType" format="enum">
+            <enum name="ImageButton" value="0"/>
+            <enum name="TextView" value="1"/>
+        </attr>
+        <attr name="expandIndicator" format="reference"/>
+        <attr name="collapseIndicator" format="reference"/>
+
+        <attr name="textViewId" format="reference"/>
+        <attr name="messageViewId" format="reference"/>
+        <attr name="expandCollapseToggleId" format="reference"/>
+        <attr name="foldClickable" format="boolean"/>
+    </declare-styleable>
+
+    <declare-styleable name="ColorTextView">
+        <attr name="ctvText" format="string" />
+        <attr name="ctvBackground" format="color"/>
+        <attr name="ctvTextSize" format="dimension"/>
+        <attr name="ctvTextColor" format="color"/>
+        <attr name="ctvCornerSize" format="integer"/>
+        <attr name="ctvMargin" format="dimension"></attr>
+    </declare-styleable>
+
+    <declare-styleable name="LinearCardView">
+        <attr name="left_text" format="string"/>
+        <attr name="right_text" format="string"/>
+        <attr name="show_right_text" format="boolean"/>
+    </declare-styleable>
+    <declare-styleable name="FindLineView">
+        <attr name="src" format="reference"/>
+        <attr name="text" format="string" />
+        <attr name="showRightIcon" format="boolean"/>
+    </declare-styleable>
+
+    <declare-styleable name="LaybelLayout">
+        <attr name="line_padding" format="float"/>
+        <attr name="text_background" format="reference"/><!-- TextView的背景 -->
+        <attr name="child_margin" format="integer"/><!-- 子View的外边距 -->
+    </declare-styleable>
+
+    <declare-styleable name="ArcView">
+        <attr name="arcbackground" format="color"/>
+    </declare-styleable>
+</resources>

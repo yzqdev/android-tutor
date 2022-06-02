@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.yzq.rest">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:supportsRtl="true"
+        android:hardwareAccelerated="true"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme">
+        <activity android:name="com.yzq.rest.Activity.MainActivity"
+            android:theme="@style/ImageTranslucentTheme"
+            >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <activity android:name="com.yzq.rest.Activity.ShowWebViewActivity"
+            android:theme="@style/ImageTranslucentTheme"
+            />
+        <activity android:name="com.yzq.rest.Activity.ShowBigBitmapActivity"
+            android:theme="@style/ImageTranslucentTheme"
+            />
+    </application>
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.VIBRATE" />
+</manifest>

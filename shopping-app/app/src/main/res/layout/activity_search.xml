@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".goods.SearchActivity">
+
+    <RelativeLayout
+        android:id="@+id/seach_l1"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginRight="15dp">
+
+        <ImageView
+            android:id="@+id/search_back_iv"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:paddingRight="20dp"
+            android:src="@drawable/back" />
+
+        <EditText
+            android:id="@+id/search_sc_et"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_toLeftOf="@id/search_more_iv"
+            android:layout_toRightOf="@id/search_back_iv"
+            android:background="@drawable/et_bg"
+            android:drawableLeft="@drawable/search_iv"
+            android:hint="搜索你感兴趣的商品"
+            android:imeOptions="actionSearch"
+            android:singleLine="true"
+            android:textColor="@color/nav_normal"
+            android:textColorHint="@color/nav_normal" />
+
+        <ImageView
+            android:id="@+id/search_more_iv"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:paddingLeft="20dp"
+            android:src="@drawable/more_iv" />
+    </RelativeLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="1dp" />
+
+    <LinearLayout
+        android:id="@+id/seach_l2"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/seach_l1"
+        android:orientation="vertical">
+
+        <com.google.android.material.tabs.TabLayout
+            android:id="@+id/tab_search_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:tabRippleColor="@android:color/transparent"
+            app:tabSelectedTextColor="@color/darkorange"
+            app:tabTextColor="@color/black"
+            app:tabIndicatorColor="@color/orange"
+            app:tabMode="fixed">
+
+            <com.google.android.material.tabs.TabItem
+                android:id="@+id/tab_search_zonghe"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+
+                android:text="综合" />
+
+            <com.google.android.material.tabs.TabItem
+                android:id="@+id/tab_search_jiage"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="价格" />
+
+        </com.google.android.material.tabs.TabLayout>
+        <ListView
+            android:id="@+id/tab_search_list"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:cacheColorHint="@color/black"
+            android:divider="@color/whitesmoke"
+            android:dividerHeight="5dp"
+            >
+        </ListView>
+
+
+    </LinearLayout>
+
+</RelativeLayout>

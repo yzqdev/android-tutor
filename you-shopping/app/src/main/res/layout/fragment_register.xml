@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:padding="20dp"
+    tools:context=".login.RegisterFragment">
+
+    <TextView
+        android:id="@+id/frag_reg_tv1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="电话号码："
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:textColor="@color/nav_normal"
+        android:layout_marginTop="20dp"/>
+    <!--  可输入文本框  -->
+    <EditText
+        android:id="@+id/frag_reg_et_tel1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/frag_reg_tv1"
+        android:background="@drawable/et_bg"
+        android:layout_alignBaseline="@+id/frag_reg_tv1"
+        android:textSize="16dp"
+        android:textColor="@color/nav_normal"
+        android:layout_marginLeft="10dp"
+        android:inputType="phone"
+        android:maxLength="11"
+        />
+    <TextView
+        android:id="@+id/frag_reg_tv2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="昵        称："
+        android:layout_below="@+id/frag_reg_tv1"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:textColor="@color/nav_normal"
+        android:layout_marginTop="30dp"/>
+    <EditText
+        android:id="@+id/frag_reg_te_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/frag_reg_tv2"
+        android:background="@drawable/et_bg"
+        android:layout_alignBaseline="@+id/frag_reg_tv2"
+        android:textSize="16dp"
+        android:textColor="@color/nav_normal"
+        android:layout_marginLeft="10dp"
+        android:maxLength="18" />
+
+    <TextView
+        android:id="@+id/frag_reg_tv3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="密        码："
+        android:layout_below="@+id/frag_reg_tv2"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:textColor="@color/nav_normal"
+        android:layout_marginTop="30dp"/>
+    <EditText
+        android:id="@+id/frag_reg_et_pwd"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/frag_reg_tv3"
+        android:background="@drawable/et_bg"
+        android:layout_alignBaseline="@+id/frag_reg_tv3"
+        android:textSize="16dp"
+        android:textColor="@color/nav_normal"
+        android:layout_marginLeft="10dp"
+        android:inputType="textPassword"
+        android:maxLength="18" />
+
+    <TextView
+        android:id="@+id/frag_reg_tv4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="确认密码："
+        android:layout_below="@+id/frag_reg_tv3"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:textColor="@color/nav_normal"
+        android:layout_marginTop="30dp"/>
+    <EditText
+        android:id="@+id/frag_reg_et_repwd"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/frag_reg_tv4"
+        android:background="@drawable/et_bg"
+        android:layout_alignBaseline="@+id/frag_reg_tv4"
+        android:textSize="16dp"
+        android:textColor="@color/nav_normal"
+        android:layout_marginLeft="10dp"
+        android:inputType="textPassword"
+        android:maxLength="18" />
+
+    <TextView
+        android:id="@+id/frag_reg_tv5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="密保问题："
+        android:layout_below="@+id/frag_reg_tv4"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:textColor="@color/nav_normal"
+        android:layout_marginTop="30dp"/>
+    <EditText
+        android:id="@+id/frag_reg_et_question"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/frag_reg_tv5"
+        android:background="@drawable/et_bg"
+        android:layout_alignBaseline="@+id/frag_reg_tv5"
+        android:textSize="16dp"
+        android:textColor="@color/nav_normal"
+        android:layout_marginLeft="10dp"
+        android:text="我的大学是那所大学？"/>
+
+    <TextView
+        android:id="@+id/frag_reg_tv6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="密保答案："
+        android:layout_below="@+id/frag_reg_tv5"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:textColor="@color/nav_normal"
+        android:layout_marginTop="30dp"/>
+    <EditText
+        android:id="@+id/frag_reg_et_answer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/frag_reg_tv6"
+        android:background="@drawable/et_bg"
+        android:layout_alignBaseline="@+id/frag_reg_tv6"
+        android:textSize="16dp"
+        android:textColor="@color/nav_normal"
+        android:layout_marginLeft="10dp"
+        android:text="清华大学"/>
+
+    <Button
+        android:id="@+id/frag_reg_btn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/frag_reg_tv6"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/btn_bg"
+        android:textColor="@color/nav_fouces"
+        android:text="确定"
+        android:textSize="18sp"
+        android:textStyle="bold"/>
+
+</RelativeLayout>

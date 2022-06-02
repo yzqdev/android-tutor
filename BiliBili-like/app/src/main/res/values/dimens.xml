@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="splash_copyright_margin_bottom">20dp</dimen>
+    <dimen name="user_header_size">40dp</dimen>
+    <dimen name="user_name_text_size">14sp</dimen>
+    <dimen name="fen_si_text_size">12sp</dimen>
+    <dimen name="description_text_size">16sp</dimen>
+
+    <dimen name="button_width">60dp</dimen>
+    <dimen name="button_height">30dp</dimen>
+
+    <dimen name="normal_icon_size">30dp</dimen>
+    <dimen name="filter_bar_size">40.0dp</dimen>
+
+    <dimen name="text_size_xlarge">18sp</dimen>
+    <dimen name="text_size_large">16sp</dimen>
+    <dimen name="text_size_normal">14sp</dimen>
+
+    <dimen name="web_image_background_height">180dp</dimen>
+    <dimen name="fab_margin">20dp</dimen>
+    <dimen name="fab_image_size">40dp</dimen>
+
+    <dimen name="pop_watch_later_xoffset">15dp</dimen>
+    <dimen name="pop_watch_later_yoffset">-10dp</dimen>
+
+    <dimen name="banner_height">120dp</dimen>
+
+    <dimen name="bangumi_tv_width">140dp</dimen>
+    <dimen name="bangumi_tv_height">100dp</dimen>
+</resources>

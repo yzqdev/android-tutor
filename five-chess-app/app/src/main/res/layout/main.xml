@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:padding="30dip"
+    android:background="@drawable/board"
+
+    >
+
+
+		<TextView
+			android:id="@+id/app_title"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_gravity="center"
+			android:text="@string/main_title"
+			android:textColor="@color/text_title"
+			android:textSize="24sp" />
+
+		<Button
+			android:id="@+id/btn_newgame"
+			android:layout_width="fill_parent"
+			android:layout_height="wrap_content"
+			android:text="@string/btn_newgame" />
+
+		<Button
+	 	android:id="@+id/btn_exit"
+	 	android:layout_width="fill_parent"
+	 	android:layout_height="wrap_content"
+	 	android:text="@string/btn_exit"
+	 	/>
+
+</LinearLayout>

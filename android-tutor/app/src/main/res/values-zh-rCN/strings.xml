@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">教程</string>
+    <string name="action_settings">设置</string>
+    <string name="first_fragment_label">第一个frag</string>
+    <string name="second_fragment_label">json获取</string>
+    <string name="next">下一页</string>
+    <string name="previous">上一页</string>
+    <string name="hello_first_fragment">hello 我人都傻了</string>
+    <string name="hello_second_fragment">你好econd fragment. Arg: %1$s</string>
+    <string name="info_text">请自行更改</string>
+    <string name="emptyConfirm">确定</string>
+    <string name="edit_message">edit_message</string>
+</resources>

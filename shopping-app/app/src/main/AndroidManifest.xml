@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.nbshoping">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+    <application
+        android:name=".MyApp"
+        android:allowBackup="true"
+        android:icon="@mipmap/icon"
+        android:label="@string/app_name"
+        android:requestLegacyExternalStorage="true"
+        android:roundIcon="@mipmap/icon"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.Nbshoping"
+        android:usesCleartextTraffic="true">
+        <activity android:name=".me.ShoppingHstActivity"></activity>
+        <activity android:name=".goods.SearchActivity" />
+        <activity android:name=".goods.BoughtActivity" />
+        <activity android:name=".goods.GoodsDetailsActivity" />
+        <activity android:name=".me.SetActivity" />
+        <activity android:name=".login.UpPwdActivity" />
+        <activity android:name=".login.UpPwdVaActivity" />
+        <activity android:name=".login.PersonCenterActivity" />
+        <activity android:name=".me.AboutActivity" />
+        <activity android:name=".login.LoginRegActivity" />
+        <activity android:name=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

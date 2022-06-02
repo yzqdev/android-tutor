@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical"
+    tools:context=".FPageFragment">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_margin="15dp">
+
+        <ImageView
+            android:id="@+id/fpage_scan_iv"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:paddingRight="20dp"
+            android:src="@drawable/scan_iv" />
+
+        <EditText
+            android:id="@+id/fpage_sc_et"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_toLeftOf="@id/fpage_mes_iv"
+            android:layout_toRightOf="@id/fpage_scan_iv"
+            android:background="@drawable/et_bg"
+            android:drawableLeft="@drawable/search_iv"
+            android:hint="搜索你感兴趣的商品"
+            android:imeOptions="actionSearch"
+            android:singleLine="true"
+            android:textColor="@color/nav_normal"
+            android:textColorHint="@color/nav_normal" />
+
+        <ImageView
+            android:id="@+id/fpage_mes_iv"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:paddingLeft="20dp"
+            android:src="@drawable/mes_iv" />
+    </RelativeLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            >
+
+
+            <androidx.viewpager.widget.ViewPager
+                android:id="@+id/fpage_banner_vp"
+                android:layout_width="match_parent"
+                android:layout_height="180dp">
+            </androidx.viewpager.widget.ViewPager>
+            <LinearLayout
+                android:id="@+id/fpage_point_layout"
+                android:layout_width="match_parent"
+                android:layout_height="10dp"
+                android:background="@color/white"
+                android:gravity="center"
+                android:orientation="horizontal" />
+
+            <androidx.viewpager.widget.ViewPager
+                android:id="@+id/fpage_type_vp"
+                android:layout_width="match_parent"
+                android:layout_height="200dp">
+
+
+            </androidx.viewpager.widget.ViewPager>
+
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:padding="5dp"
+                android:drawableLeft="@mipmap/home53"
+                android:text="热销产品"
+                android:textColor="@color/red" />
+
+            <LinearLayout
+                android:id="@+id/fpage_hot_layput"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/whitesmoke"
+                android:padding="5dp"
+                android:orientation="vertical" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:padding="5dp"
+                android:text="产品推荐"
+                android:drawableLeft="@mipmap/recommend"
+
+                android:textColor="@color/orange" />
+            <LinearLayout
+                android:background="@color/whitesmoke"
+                android:id="@+id/fpage_hot_recommendt"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="5dp"
+                android:orientation="vertical" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:gravity="center"
+                android:text="......"
+                android:textColor="@color/nav_normal"/>
+        </LinearLayout>
+
+
+
+    </ScrollView>
+</LinearLayout>

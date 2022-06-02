@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:bottom="5dp"
+
+        android:color="@color/orange" android:state_checked="true">
+        <shape>
+            <!--     View填充颜色 -->
+            <solid android:color="@color/orange" />
+        </shape>
+    </item>
+
+
+    <item android:color="@color/black"
+
+        android:state_checked="false" />
+    <!-- 给View的上 左  右设置8dp的边框 -->
+
+
+</selector>
+
+
+
+

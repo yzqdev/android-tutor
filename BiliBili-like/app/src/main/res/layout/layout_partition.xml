@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/dp_4"
+>
+    <com.facebook.drawee.view.SimpleDraweeView
+            android:id="@+id/image_part"
+            style="@style/image_small"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toTopOf="@id/live_partition_recy"
+            app:layout_constraintVertical_bias="0.5"
+            app:viewAspectRatio="1"
+            app:placeholderImageScaleType="centerInside"
+            app:actualImageScaleType="centerInside"
+    />
+    <TextView
+            android:id="@+id/live_category_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="视频唱见"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toTopOf="@id/live_partition_recy"
+            app:layout_constraintLeft_toRightOf="@id/image_part"
+            app:layout_constraintVertical_bias="0.5"
+            android:layout_marginLeft="@dimen/dp_4"
+    />
+    <TextView
+            android:id="@+id/live_look_more"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="当前0个直播"
+            style="@style/TextMessage"
+            android:layout_gravity="right"
+            android:textColor="@color/black_alpha_112"
+            android:gravity="center_vertical"
+            app:layout_constraintRight_toLeftOf="@id/image_more"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toTopOf="@id/live_partition_recy"
+            app:layout_constraintVertical_bias="0.5"
+    />
+    <ImageView
+            android:id="@+id/image_more"
+            style="@style/image_small"
+            android:src="@drawable/ic_img_right"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toTopOf="@id/live_partition_recy"
+            app:layout_constraintVertical_bias="0.5"
+            app:layout_constraintRight_toRightOf="parent"
+            android:layout_margin="@dimen/dp_4"
+    />
+
+    <android.support.v7.widget.RecyclerView
+            android:id="@+id/live_partition_recy"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toBottomOf="@id/image_part"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+    >
+
+    </android.support.v7.widget.RecyclerView>
+    <ImageView
+            style="@style/between_line"
+            app:layout_constraintTop_toBottomOf="@id/live_partition_recy"
+            android:layout_marginTop="5dp"
+    />
+</android.support.constraint.ConstraintLayout>

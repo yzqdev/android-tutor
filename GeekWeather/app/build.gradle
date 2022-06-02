@@ -1,0 +1,48 @@
+plugins {
+    id 'com.android.application'
+}
+repositories {
+    flatDir {
+        dir 'libs'
+    }
+}
+android {
+    compileSdk 30
+
+    defaultConfig {
+        applicationId "com.yzq.geekweather"
+        minSdk 21
+        targetSdk 30
+        versionCode 1
+        versionName "1.0"
+
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_14
+        targetCompatibility JavaVersion.VERSION_14
+    }
+}
+
+dependencies {
+    implementation fileTree(include: ['*.jar'], dir: 'libs')
+// https://mvnrepository.com/artifact/com.google.gson/gson
+    implementation 'com.google.gson:gson:2.2.1'
+
+    implementation 'androidx.appcompat:appcompat:1.2.0'
+    // https://mvnrepository.com/artifact/com.android.volley/volley
+    implementation 'com.android.volley:volley:1.2.0'
+
+    implementation 'com.google.android.material:material:1.4.0'
+    implementation 'androidx.constraintlayout:constraintlayout:2.0.4'
+    testImplementation 'junit:junit:4.+'
+    androidTestImplementation 'androidx.test.ext:junit:1.1.2'
+    androidTestImplementation 'androidx.test.espresso:espresso-core:3.3.0'
+}

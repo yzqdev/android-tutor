@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.drawerlayout.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/main_drawer"
+    android:background="@color/white">
+
+    <!--    中心内容：上面内容随下面按钮改变-->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+
+    <!--下部按钮-->
+        <RadioGroup
+            android:id="@+id/main_rg"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:paddingTop="5dp"
+            android:paddingBottom="5dp"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:id="@+id/main_rb1"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:button="@null"
+                android:checked="true"
+                android:drawableTop="@drawable/main_rb1"
+                android:gravity="center"
+                android:text="首页"
+                android:textColor="@drawable/main_txt"
+                android:textSize="10sp">
+
+            </RadioButton>
+
+            <RadioButton
+                android:id="@+id/main_rb2"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:button="@null"
+                android:drawableTop="@drawable/main_rb2"
+                android:gravity="center"
+                android:text="分类"
+                android:textColor="@drawable/main_txt"
+                android:textSize="10sp">
+
+            </RadioButton>
+
+            <RadioButton
+                android:id="@+id/main_rb3"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:button="@null"
+                android:drawableTop="@drawable/main_rb3"
+                android:gravity="center"
+                android:text="我的"
+                android:textColor="@drawable/main_txt"
+                android:textSize="10sp">
+
+            </RadioButton>
+
+        </RadioGroup>
+
+        <TextView
+            android:id="@+id/main_line"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/whitesmoke"
+            android:layout_above="@+id/main_rg"/>
+
+        <!--上部内容-->
+        <LinearLayout
+            android:id="@+id/main_layout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_above="@+id/main_line"
+            android:orientation="vertical"
+            />
+    </RelativeLayout>
+
+    <!--    左边侧滑动抽屉-->
+    <LinearLayout
+        android:layout_width="300dp"
+        android:layout_height="match_parent"
+        android:layout_gravity="start"
+        android:background="@color/white"
+        android:orientation="vertical">
+        <include layout="@layout/main_drawer"
+            android:id="@+id/main_left"/>
+
+    </LinearLayout>
+</androidx.drawerlayout.widget.DrawerLayout>
